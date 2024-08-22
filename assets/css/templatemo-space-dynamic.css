@@ -1575,3 +1575,28 @@ responsive
     margin-left: 0px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/* extra css */
+
+/* Style the navigation indicators (dots) */
+.carousel-indicators li {
+  background-color: #fe3f3f81; /* Change the color of the indicators (dots) to black */
+}
+
+/* Style the active indicator */
+.carousel-indicators .active {
+  background-color: #fe3f40; /* Keep the active indicator black */
+}
+
+
+
