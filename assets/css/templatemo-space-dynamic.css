@@ -1600,3 +1600,10 @@ responsive
 
 
 
+@media screen and (min-width: 1025px) {
+.exp-image-botm-size{
+   position: relative;
+   transform: scale(1.5);
+   bottom: -100px;
+}
+}
