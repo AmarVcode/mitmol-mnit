@@ -2096,12 +2096,7 @@ responsive
   margin-bottom: 1rem;
 }
 
-.goals-header p {
-  font-size: 1.2rem;
-  color: #666;
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 
 .goals-content {
   display: flex;
@@ -2131,7 +2126,7 @@ responsive
 }
 
 .goal-image {
-  width: 80px;
+  width: 125px;
   height: 80px;
   margin-bottom: 1rem;
 }
@@ -2166,4 +2161,11 @@ responsive
   .goal-card {
     width: 100%;
   }
+}
+
+
+.goals-heade-p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 40px;
 }
