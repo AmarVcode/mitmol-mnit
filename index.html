@@ -606,7 +606,172 @@
 </section>
 
 
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 
+  .customfaq-container {
+      margin: 0 auto;
+      padding: 4rem;
+      width: 48rem;
+  }
+
+  .customfaq-accordion .customfaq-accordion-item {
+      border-bottom: 1px solid #e5e5e5;
+  }
+  .customfaq-accordion .customfaq-accordion-item button[aria-expanded=true] {
+      border-bottom: 1px solid #03b5d2;
+  }
+  .customfaq-accordion button {
+      position: relative;
+      display: block;
+      text-align: left;
+      width: 100%;
+      padding: 1em 0;
+      color: #7288a2;
+      font-size: 1.15rem;
+      font-weight: 400;
+      border: none;
+      background: none;
+      outline: none;
+  }
+  .customfaq-accordion button:hover, .customfaq-accordion button:focus {
+      cursor: pointer;
+      color: #03b5d2;
+  }
+  .customfaq-accordion button:hover::after, .customfaq-accordion button:focus::after {
+      cursor: pointer;
+      color: #03b5d2;
+      border: 1px solid #03b5d2;
+  }
+  .customfaq-accordion button .customfaq-accordion-title {
+      padding: 1em 1.5em 1em 0;
+  }
+  .customfaq-accordion button .customfaq-icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      right: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+  }
+  .customfaq-accordion button .customfaq-icon::before {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 9px;
+      left: 5px;
+      width: 10px;
+      height: 2px;
+      background: currentColor;
+  }
+  .customfaq-accordion button .customfaq-icon::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 5px;
+      left: 9px;
+      width: 2px;
+      height: 10px;
+      background: currentColor;
+  }
+  .customfaq-accordion button[aria-expanded=true] {
+      color: #03b5d2;
+  }
+  .customfaq-accordion button[aria-expanded=true] .customfaq-icon::after {
+      width: 0;
+  }
+  .customfaq-accordion button[aria-expanded=true] + .customfaq-accordion-content {
+      opacity: 1;
+      max-height: 9em;
+      transition: all 200ms linear;
+      will-change: opacity, max-height;
+  }
+  .customfaq-accordion .customfaq-accordion-content {
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: opacity 200ms linear, max-height 200ms linear;
+      will-change: opacity, max-height;
+  }
+  .customfaq-accordion .customfaq-accordion-content p {
+      font-size: 1rem;
+      font-weight: 300;
+      margin: 2em 0;
+  }
+</style>
+
+<section style="width: 100%; margin: auto;">
+  <div class="customfaq-container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="customfaq-accordion">
+        <div class="customfaq-accordion-item">
+          <button id="customfaq-button-1" aria-expanded="false">
+            <span class="customfaq-accordion-title">1. What types of conveyor systems do you offer?</span>
+            <span class="customfaq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="customfaq-accordion-content">
+            <p>Answer: We offer a wide range of conveyor systems including belt conveyors, chain conveyors, screw conveyors, roller conveyors, belt elevators, bucket conveyors, drag conveyors, excavators, multiple discharge conveyors, modular flex conveyors, telescopic conveyors, and special accessories/products. Each system is designed to handle unit and bulk materials efficiently.</p>
+          </div>
+        </div>
+        <div class="customfaq-accordion-item">
+          <button id="customfaq-button-2" aria-expanded="false">
+            <span class="customfaq-accordion-title">2. How do I request a quote for your machinery solutions?</span>
+            <span class="customfaq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="customfaq-accordion-content">
+            <p>Answer: To request a quote, please contact us through our contact form or call us at 010-020-0340. Provide details about your specific needs and requirements, and our team will get back to you with a customized proposal.</p>
+          </div>
+        </div>
+        <div class="customfaq-accordion-item">
+          <button id="customfaq-button-3" aria-expanded="false">
+            <span class="customfaq-accordion-title">3. Do you provide installation and commissioning services?</span>
+            <span class="customfaq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="customfaq-accordion-content">
+            <p>Answer: Yes, we offer comprehensive installation and commissioning services for all our conveyor systems. Our experienced technicians will ensure that your equipment is installed correctly and functions optimally from day one.</p>
+          </div>
+        </div>
+        <div class="customfaq-accordion-item">
+          <button id="customfaq-button-4" aria-expanded="false">
+            <span class="customfaq-accordion-title">4. What kind of maintenance services do you offer?</span>
+            <span class="customfaq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="customfaq-accordion-content">
+            <p>Answer: We provide a range of maintenance services, including routine inspections, troubleshooting, repairs, and replacements. Our team can also offer comprehensive maintenance service contracts to keep your machinery in top condition and minimize downtime.</p>
+          </div>
+        </div>
+        <div class="customfaq-accordion-item">
+          <button id="customfaq-button-5" aria-expanded="false">
+            <span class="customfaq-accordion-title">5. Can you design custom conveyor systems for specific applications?</span>
+            <span class="customfaq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="customfaq-accordion-content">
+            <p>Answer: Absolutely! Our in-house design team uses advanced tools like AutoCAD and SolidWorks to create custom conveyor systems tailored to your specific application needs. We work closely with you to ensure our designs meet your requirements and optimize performance.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<script>
+  const items = document.querySelectorAll(".customfaq-accordion button");
+
+  function toggleAccordion() {
+      const itemToggle = this.getAttribute('aria-expanded');
+      
+      for (let i = 0; i < items.length; i++) {
+          items[i].setAttribute('aria-expanded', 'false');
+      }
+      
+      if (itemToggle === 'false') {
+          this.setAttribute('aria-expanded', 'true');
+      }
+  }
+
+  items.forEach(item => item.addEventListener('click', toggleAccordion));
+</script>
 
 
 
