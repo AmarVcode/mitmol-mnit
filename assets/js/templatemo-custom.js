@@ -134,3 +134,20 @@
 
 
 })(window.jQuery);
+
+
+
+
+
+
+
+
+
+//extra
+
+
+
+function hide_top_bar(){
+  document.querySelector('.top-info-bar').style.display = 'none';
+  document.getElementById("let_change_header_height").style.minHeight="80px";
+}
