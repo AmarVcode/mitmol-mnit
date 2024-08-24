@@ -2169,3 +2169,9 @@ responsive
   font-size: 18px;
   margin-bottom: 40px;
 }
+
+#let_change_header_height{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
