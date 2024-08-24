@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+.career-page {
+  font-family: 'Poppins', sans-serif;
+  padding: 0 20px;
+}
+
+.hero-section {
+  background-image: url('your-image-path.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #03a4ed;
+}
+
+.hero-section p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.career-email {
+  font-size: 18px;
+  color: #fe3f40;
+  text-decoration: none;
+}
+
+.career-email:hover {
+  text-decoration: underline;
+}
+
+.reviews-section {
+  background: linear-gradient(to right, #fe3f40, #03a4ed);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.reviews-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.reviews-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-basis: 30%;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+}
+
+.review-card i {
+  font-size: 24px;
+  color: #fe3f40;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.review-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #03a4ed;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.learn-more-btn:hover {
+  background-color: #fe3f40;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 28px;
+  }
+
+  .hero-section p, .career-email {
+    font-size: 16px;
+  }
+
+  .review-card {
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+
+  .overlay {
+    padding: 30px;
+  }
+
+  .reviews-section h2 {
+    font-size: 24px;
+  }
+
+  .learn-more-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 22px;
+  }
+
+  .hero-section p, .career-email {
+    font-size: 14px;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .review-card p {
+    font-size: 14px;
+  }
+
+  .learn-more-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+</style>
+  
+
+
+
+
+
+
+
+
+
+
+<div class="career-page">
+    <div class="hero-section">
+      <div class="overlay">
+        <h1>Join Our Team at MIT-MOL</h1>
+        <p>Be a part of a forward-thinking, innovative company.</p>
+        <p>Interested Candidates, mail your resume to:</p>
+        <a href="mailto:career@mitmol.com" class="career-email">
+          <i class="fas fa-envelope"></i> career@mitmol.com
+        </a>
+      </div>
+    </div>
+  
+    <div class="reviews-section">
+      <h2>What Our Employees Say</h2>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <i class="fas fa-quote-left"></i>
+          <p>"Working at MIT-MOL has been a fulfilling experience with continuous learning opportunities."</p>
+          <h4>Rajesh Kumar</h4>
+          <p>Senior Mechanical Engineer</p>
+        </div>
+        <div class="review-card">
+          <i class="fas fa-quote-left"></i>
+          <p>"The focus on quality and innovation at MIT-MOL is what sets us apart."</p>
+          <h4>Priya Sharma</h4>
+          <p>Quality Assurance Manager</p>
+        </div>
+        <div class="review-card">
+          <i class="fas fa-quote-left"></i>
+          <p>"Being part of a team that values hard work and dedication is what I love about MIT-MOL."</p>
+          <h4>Amit Verma</h4>
+          <p>Production Supervisor</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-section">
+      <p>Ready to advance your career with us?</p>
+      <a href="/careers" class="learn-more-btn">Explore More Opportunities</a>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
