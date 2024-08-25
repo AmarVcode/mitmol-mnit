@@ -97,3 +97,21 @@ $(document).ready(function(){
   });
 });
 
+
+
+
+
+//megamenu js
+
+let megamenu = false;
+
+function megamenufun(){
+if(megamenu === false){
+  document.getElementById("megamenu_my").style.display="block";
+  megamenu = true
+}
+else{
+  document.getElementById("megamenu_my").style.display="none";
+  megamenu = false
+}
+}
