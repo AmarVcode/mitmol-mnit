@@ -4,106 +4,161 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Custom Mega Menu Styling */
+    .custom-megamenu {
+      position: relative;
+    }
+
+    .custom-megamenu .custom-megamenu-dropdown-content {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100vw;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 30px 20px;
+      z-index: 999;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .custom-megamenu:hover .custom-megamenu-dropdown-content {
+      display: block;
+    }
+
+    .custom-megamenu-dropdown-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      border-radius: 10px;
+      transform: scale(0.95);
+      box-shadow: 0px 0px 50px #ccc;
+
+    }
+
+    .custom-megamenu-dropdown-column {
+      width: 24%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .custom-megamenu-dropdown-column a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      transition: all 0.3s ease-in-out;
+      background-color: #fff;
+    }
+
+    .custom-megamenu-dropdown-column a i {
+      font-size: 20px;
+      margin-right: 10px;
+      color: #03a4ed;
+    }
+
+    .custom-megamenu-dropdown-column a p {
+      font-size: 14px;
+      color: #666;
+      margin: 5px 0 0;
+    }
+
+    .custom-megamenu-dropdown-column a:hover {
+      border: 1px solid #03a4ed;
+      background-color: #03a3ed19;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 1200px) {
+      .custom-megamenu-dropdown-column {
+        width: 30%;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .custom-megamenu-dropdown-column {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .custom-megamenu-dropdown-column {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .custom-megamenu-dropdown-row {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<style>
-.customtestimonial {
-  text-align: center;
-  padding: 20px;
-}
-
-.customtestimonial-designation {
-  font-weight: bold;
-  color: #333;
-}
-
-.customtestimonial-text {
-  font-style: italic;
-  color: #666;
-}
-
-.carousel-item {
-  transition: transform 0.5s ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .customtestimonial {
-    padding: 10px;
-  }
-}
-
-</style>
-<div id="customtestimonialSlider" class="carousel slide" data-ride="carousel" data-interval="5000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="customtestimonial">
-            <p class="customtestimonial-designation">Client 1, CEO of XYZ</p>
-            <p class="customtestimonial-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+      <div class="custom-megamenu-dropdown-content" id="megamenu_my">
+        <div class="custom-megamenu-dropdown-row">
+          <div class="custom-megamenu-dropdown-column">
+            <a href="belt_conveyors.html">
+              <i class="fas fa-cogs"></i> Belt Conveyors
+              <p>Efficient bulk material transport.</p>
+            </a>
+            <a href="chain_conveyors.html">
+              <i class="fas fa-link"></i> Chain Conveyors
+              <p>Durable solution for heavy-duty tasks.</p>
+            </a>
+            <a href="screw_conveyors.html">
+              <i class="fas fa-arrow-right"></i> Screw Conveyors
+              <p>Granular material transport.</p>
+            </a>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="customtestimonial">
-            <p class="customtestimonial-designation">Client 2, Marketing Head at ABC</p>
-            <p class="customtestimonial-text">"Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+          <div class="custom-megamenu-dropdown-column">
+            <a href="roller_conveyors.html">
+              <i class="fas fa-recycle"></i> Roller Conveyors
+              <p>Reliable unit load movement.</p>
+            </a>
+            <a href="belt_elevators.html">
+              <i class="fas fa-angle-double-up"></i> Belt Elevators
+              <p>Vertical material handling.</p>
+            </a>
+            <a href="bucket_conveyors.html">
+              <i class="fas fa-box"></i> Bucket Conveyors
+              <p>For vertical bulk material transport.</p>
+            </a>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="customtestimonial">
-            <p class="customtestimonial-designation">Client 3, Founder of DEF</p>
-            <p class="customtestimonial-text">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."</p>
+          <div class="custom-megamenu-dropdown-column">
+            <a href="drag_conveyors.html">
+              <i class="fas fa-dolly"></i> Drag Conveyors
+              <p>For abrasive material handling.</p>
+            </a>
+            <a href="excavators.html">
+              <i class="fas fa-truck-loading"></i> Excavators
+              <p>Heavy-duty material excavation.</p>
+            </a>
+            <a href="multiple_discharge_conveyors.html">
+              <i class="fas fa-external-link-alt"></i> Multiple Discharge Conveyors
+              <p>Multiple point material discharge.</p>
+            </a>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="customtestimonial">
-            <p class="customtestimonial-designation">Client 4, CTO of GHI</p>
-            <p class="customtestimonial-text">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="customtestimonial">
-            <p class="customtestimonial-designation">Client 5, CFO at JKL</p>
-            <p class="customtestimonial-text">"Excepteur sint occaecat cupidatat non proident, sunt in culpa."</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="customtestimonial">
-            <p class="customtestimonial-designation">Client 6, COO of MNO</p>
-            <p class="customtestimonial-text">"Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse."</p>
+          <div class="custom-megamenu-dropdown-column">
+            <a href="modular_flex_conveyors.html">
+              <i class="fas fa-random"></i> Modular Flex Conveyors
+              <p>Flexible systems for dynamic layouts.</p>
+            </a>
+            <a href="telescopic_conveyors.html">
+              <i class="fas fa-expand-arrows-alt"></i> Telescopic Conveyors
+              <p>Extendable conveyors for optimized loading.</p>
+            </a>
+            <a href="special_accessories_products.html">
+              <i class="fas fa-tools"></i> Special Accessories/Products
+              <p>Customized solutions for unique needs.</p>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#customtestimonialSlider" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#customtestimonialSlider" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<script>
-  $(document).ready(function(){
-  $('#customtestimonialSlider').carousel({
-    interval: 3000
-  });
 
-  $('#customtestimonialSlider').hover(function(){
-    $(this).carousel('pause');
-  }, function(){
-    $(this).carousel('cycle');
-  });
-});
-
-</script>
-  
 </body>
 </html>
