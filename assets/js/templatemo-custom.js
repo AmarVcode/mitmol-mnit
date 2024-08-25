@@ -1,4 +1,44 @@
+(function ($) {
+	
+	"use strict";
 
+	// Header Type = Fixed
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var box = $('.header-text').height();
+    var header = $('header').height();
+
+    if (scroll >= box - header) {
+      $("header").addClass("background-header");
+    } else {
+      $("header").removeClass("background-header");
+    }
+  });
+
+
+	$('.owl-our-team').owlCarousel({
+		items:3,
+		loop:true,
+		dots: true,
+		nav: false,
+		autoplay: true,
+		margin:0,
+		  responsive:{
+			  0:{
+				  items:1
+			  },
+			  600:{
+				  items:2
+			  },
+			  1000:{
+				  items:3
+			  },
+			  1600:{
+				  items:3
+			  }
+		  }
+	})
+	
 
 	// Menu Dropdown Toggle
   if($('.menu-trigger').length){
@@ -28,6 +68,30 @@
     }
   });
 
+  $(document).ready(function () {
+      $(document).on("scroll", onScroll);
+      
+      //smoothscroll
+      $('.scroll-to-section a[href^="#"]').on('click', function (e) {
+          e.preventDefault();
+          $(document).off("scroll");
+          
+          $('.scroll-to-section a').each(function () {
+              $(this).removeClass('active');
+          })
+          $(this).addClass('active');
+        
+          var target = this.hash,
+          menu = target;
+          var target = $(this.hash);
+          $('html, body').stop().animate({
+              scrollTop: (target.offset().top) + 1
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+  });
 
   function onScroll(event){
       var scrollPos = $(document).scrollTop();
@@ -69,7 +133,7 @@
 
 
 
-
+})(window.jQuery);
 
 
 
@@ -78,11 +142,6 @@
 //extra
 
 
-
-function hide_top_bar(){
-  document.querySelector('.top-info-bar').style.display = 'none';
-  document.getElementById("let_change_header_height").style.minHeight="80px";
-}
 
 
 $(document).ready(function(){
