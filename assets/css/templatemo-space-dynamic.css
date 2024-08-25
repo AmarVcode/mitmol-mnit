@@ -2269,4 +2269,10 @@ background: white;
     .custom-megamenu-dropdown-row {
       flex-direction: column;
     }
+
+    #let_change_header_height{
+      position: relative;
+      top: 0px;
+      z-index: 1000;
+    }
   }
