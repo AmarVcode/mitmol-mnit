@@ -3,162 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Responsive Image Gallery</title>
   <style>
-    /* Custom Mega Menu Styling */
-    .custom-megamenu {
-      position: relative;
-    }
-
-    .custom-megamenu .custom-megamenu-dropdown-content {
-      position: absolute;
-      left: 0;
-      top: 100%;
-      width: 100vw;
-      background: #ffffff;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      padding: 30px 20px;
-      z-index: 999;
-      transition: all 0.3s ease-in-out;
-    }
-
-    .custom-megamenu:hover .custom-megamenu-dropdown-content {
-      display: block;
-    }
-
-    .custom-megamenu-dropdown-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      border-radius: 10px;
-      transform: scale(0.95);
-      box-shadow: 0px 0px 50px #ccc;
-
-    }
-
-    .custom-megamenu-dropdown-column {
-      width: 24%;
+    /* Gallery Container */
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 10px;
+      justify-content: center;
       padding: 10px;
       box-sizing: border-box;
     }
 
-    .custom-megamenu-dropdown-column a {
-      display: block;
-      color: #333;
-      text-decoration: none;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 5px;
-      border: 1px solid transparent;
-      transition: all 0.3s ease-in-out;
-      background-color: #fff;
+    /* Image Items */
+    .image-item {
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      /* background: #000; */
+      position: relative;
+      overflow: hidden;
+      transition: filter 0.3s, border 0.3s;
     }
 
-    .custom-megamenu-dropdown-column a i {
-      font-size: 20px;
-      margin-right: 10px;
-      color: #03a4ed;
+    /* Hover Effect */
+    .image-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+      opacity: 0;
+      transition: opacity 0.3s;
     }
 
-    .custom-megamenu-dropdown-column a p {
-      font-size: 14px;
-      color: #666;
-      margin: 5px 0 0;
+    .image-item:hover::before {
+      opacity: 1;
     }
 
-    .custom-megamenu-dropdown-column a:hover {
-      border: 1px solid #03a4ed;
-      background-color: #03a3ed19;
+    .image-item:hover {
+      filter: brightness(80%);
+      border: 2px solid #fff; /* Optional: white border on hover */
     }
 
-    /* Responsive Adjustments */
+    .image-item:nth-child(1) {
+      grid-row: span 1;
+      grid-column: span 1;
+      height: 200px;
+    }
+
+    .image-item:nth-child(2) {
+      grid-row: span 1;
+      grid-column: span 1;
+      height: 200px;
+    }
+
+    .image-item:nth-child(3) {
+      grid-row: span 2;
+      grid-column: span 1;
+      height: 400px;
+    }
+
+    .image-item:nth-child(4) {
+      grid-row: span 2;
+      grid-column: span 2;
+      height: 400px;
+    }
+
+    .image-item:nth-child(5) {
+      grid-row: span 1;
+      grid-column: span 1;
+      height: 200px;
+    }
+
+
+
+    /* Responsive Design */
     @media (max-width: 1200px) {
-      .custom-megamenu-dropdown-column {
-        width: 30%;
+      .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
       }
-    }
 
-    @media (max-width: 992px) {
-      .custom-megamenu-dropdown-column {
-        width: 45%;
+      .image-item:nth-child(3),
+      .image-item:nth-child(4) {
+        grid-column: span 2;
+        height: 300px;
       }
     }
 
     @media (max-width: 768px) {
-      .custom-megamenu-dropdown-column {
-        width: 100%;
-        margin-bottom: 10px;
+      .image-gallery {
+        grid-template-columns: 1fr;
       }
 
-      .custom-megamenu-dropdown-row {
-        flex-direction: column;
+      .image-item {
+        height: 200px;
       }
     }
   </style>
 </head>
 <body>
-
-      <div class="custom-megamenu-dropdown-content" id="megamenu_my">
-        <div class="custom-megamenu-dropdown-row">
-          <div class="custom-megamenu-dropdown-column">
-            <a href="belt_conveyors.html">
-              <i class="fas fa-cogs"></i> Belt Conveyors
-              <p>Efficient bulk material transport.</p>
-            </a>
-            <a href="chain_conveyors.html">
-              <i class="fas fa-link"></i> Chain Conveyors
-              <p>Durable solution for heavy-duty tasks.</p>
-            </a>
-            <a href="screw_conveyors.html">
-              <i class="fas fa-arrow-right"></i> Screw Conveyors
-              <p>Granular material transport.</p>
-            </a>
-          </div>
-          <div class="custom-megamenu-dropdown-column">
-            <a href="roller_conveyors.html">
-              <i class="fas fa-recycle"></i> Roller Conveyors
-              <p>Reliable unit load movement.</p>
-            </a>
-            <a href="belt_elevators.html">
-              <i class="fas fa-angle-double-up"></i> Belt Elevators
-              <p>Vertical material handling.</p>
-            </a>
-            <a href="bucket_conveyors.html">
-              <i class="fas fa-box"></i> Bucket Conveyors
-              <p>For vertical bulk material transport.</p>
-            </a>
-          </div>
-          <div class="custom-megamenu-dropdown-column">
-            <a href="drag_conveyors.html">
-              <i class="fas fa-dolly"></i> Drag Conveyors
-              <p>For abrasive material handling.</p>
-            </a>
-            <a href="excavators.html">
-              <i class="fas fa-truck-loading"></i> Excavators
-              <p>Heavy-duty material excavation.</p>
-            </a>
-            <a href="multiple_discharge_conveyors.html">
-              <i class="fas fa-external-link-alt"></i> Multiple Discharge Conveyors
-              <p>Multiple point material discharge.</p>
-            </a>
-          </div>
-          <div class="custom-megamenu-dropdown-column">
-            <a href="modular_flex_conveyors.html">
-              <i class="fas fa-random"></i> Modular Flex Conveyors
-              <p>Flexible systems for dynamic layouts.</p>
-            </a>
-            <a href="telescopic_conveyors.html">
-              <i class="fas fa-expand-arrows-alt"></i> Telescopic Conveyors
-              <p>Extendable conveyors for optimized loading.</p>
-            </a>
-            <a href="special_accessories_products.html">
-              <i class="fas fa-tools"></i> Special Accessories/Products
-              <p>Customized solutions for unique needs.</p>
-            </a>
-          </div>
-        </div>
-      </div>
-
+  <section class="image-gallery">
+    <div class="image-item" style="background-image: url('image1.jpg');"></div>
+    <div class="image-item" style="background-image: url('image2.jpg');"></div>
+    <div class="image-item" style="background-image: url('image3.jpg');"></div>
+    <div class="image-item" style="background-image: url('image4.jpg');"></div>
+    <div class="image-item" style="background-image: url('image5.jpg');"></div>
+  </section>
 </body>
 </html>
