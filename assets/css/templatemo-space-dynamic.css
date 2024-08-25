@@ -2275,4 +2275,17 @@ background: white;
       top: 0px;
       z-index: 1000;
     }
+    .custom-megamenu-dropdown-row p{
+      display: none;
+    }
+
+    .custom-megamenu-dropdown-row a{
+      padding: 0px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    .custom-megamenu-dropdown-column{
+      margin-bottom: 0px;
+    }
   }
