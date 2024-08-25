@@ -2177,9 +2177,13 @@ responsive
 }
 
   /* Custom Mega Menu Styling */
+
+  #megamenu_my{
+    display: none;
+  }
   .custom-megamenu {
     position: relative;
-    background: white;
+background: white;
   }
 
   .custom-megamenu .custom-megamenu-dropdown-content {
@@ -2192,7 +2196,6 @@ responsive
     padding: 30px 20px;
     z-index: 999;
     transition: all 0.3s ease-in-out;
-display: none;
   }
 
   .custom-megamenu:hover .custom-megamenu-dropdown-content {
