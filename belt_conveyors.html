@@ -275,6 +275,12 @@
 }
 
     </style>
+
+
+
+
+
+
     <div id="custom_product_page">
         <!-- Header Section -->
         <section id="custom_product_intro" class="container-fluid text-center text-white py-5">
@@ -283,6 +289,121 @@
                 <p class="lead">Economical Solutions for Bulk Material Handling</p>
                 <img src="assets/images/belt-conveyor.jpg" alt="Belt Conveyor System" class="img-fluid mt-4">
             </div>
+        </section>
+
+
+
+        <section class="container">
+            <style>
+                /* Gallery Container */
+                .image-gallery {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-template-rows: repeat(3, auto);
+                  gap: 10px;
+                  justify-content: center;
+                  padding: 10px;
+                  box-sizing: border-box;
+                }
+            
+                /* Image Items */
+                .image-item {
+                  background-size: contain;
+                  background-position: center;
+                  border-radius: 8px;
+                  /* background: #000; */
+                  position: relative;
+                  overflow: hidden;
+                  filter: brightness(80%);
+                  transition: filter 0.3s, border 0.3s;
+                }
+            
+                /* Hover Effect */
+                .image-item::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+                  opacity: 0;
+                  transition: opacity 0.3s;
+                }
+            
+                .image-item:hover::before {
+                  opacity: 1;
+                }
+            
+                .image-item:hover {
+                  filter: brightness(80%);
+                  border: 2px solid #fff; /* Optional: white border on hover */
+                }
+            
+                .image-item:nth-child(1) {
+                  grid-row: span 1;
+                  grid-column: span 1;
+                  height: 200px;
+                  background-size: cover;
+                }
+            
+                .image-item:nth-child(2) {
+                  grid-row: span 1;
+                  grid-column: span 1;
+                  height: 200px;
+                }
+            
+                .image-item:nth-child(3) {
+                  grid-row: span 2;
+                  grid-column: span 1;
+                  height: 400px;
+                }
+            
+                .image-item:nth-child(4) {
+                  grid-row: span 2;
+                  grid-column: span 2;
+                  height: 400px;
+                }
+            
+                .image-item:nth-child(5) {
+                  grid-row: span 1;
+                  grid-column: span 1;
+                  height: 200px;
+                }
+            
+            
+            
+                /* Responsive Design */
+                @media (max-width: 1200px) {
+                  .image-gallery {
+                    grid-template-columns: repeat(2, 1fr);
+                  }
+            
+                  .image-item:nth-child(3),
+                  .image-item:nth-child(4) {
+                    grid-column: span 2;
+                    height: 300px;
+                  }
+                }
+            
+                @media (max-width: 768px) {
+                  .image-gallery {
+                    grid-template-columns: 1fr;
+                  }
+            
+                  .image-item {
+                    height: 200px;
+                  }
+                }
+              </style>
+              <section class="image-gallery">
+                <div class="image-item" style="background-image: url('./product/images/beltconvey/Wire-mesh-beltconveyor-1.jpg');"></div>
+                <div class="image-item" style="background-image: url('./product/images/beltconvey/Wire-mesh-beltconveyor-5.jpg');"></div>
+                <div class="image-item" style="background-image: url('./product/images/beltconvey/Wire-mesh-beltconveyor-3.jpg');"></div>
+                <div class="image-item" style="background-image: url('./product/images/beltconvey/Wire-mesh-beltconveyor-4.jpg');"></div>
+                <div class="image-item" style="background-image: url('./product/images/beltconvey/Wire-mesh-beltconveyor-2.jpg');"></div>
+                
+              </section>
         </section>
 
         <!-- Benefits Section -->
@@ -307,6 +428,8 @@
                 </div>
             </div>
         </section>
+
+       
 
         <!-- Product Features Section -->
         <section id="custom_product_features" class="container py-5">
