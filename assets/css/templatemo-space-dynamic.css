@@ -943,7 +943,7 @@ About Us Style
 }
 
 .about-us {
-  background-image: url(../images/about-bg.png);
+  background-image: url(../images/about-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1283,8 +1283,9 @@ contact
 */
 
 .contact-us {
-  padding: 160px 0px;
-  background-image: url(../images/contact-bg.png);
+  margin-block: 30px;
+  padding: 130px 0px;
+  background-image: url(../images/about-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1607,7 +1608,7 @@ responsive
 
 
 .custom-footer {
-  background: linear-gradient(135deg, #ffcccc88, #cceeff); /* Light red to light blue gradient */
+  background: linear-gradient(135deg, #e27f6b33, #2e31926c); /* Light red to light blue gradient */
   color: #333;
   padding: 40px 20px;
   font-size: 14px;
