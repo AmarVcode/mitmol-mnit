@@ -1,10 +1,4 @@
-/* 
 
-TemplateMo 562 Space Dynamic
-
-https://templatemo.com/tm-562-space-dynamic
-
-*/
 
 /* ---------------------------------------------
 Table of contents
@@ -147,12 +141,12 @@ body {
 }
 
 ::selection {
-  background: #03a4ed;
+  background: #e27f6b;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #03a4ed;
+  background: #e27f6b;
   color: #fff;
 }
 
@@ -189,7 +183,7 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #03a4ed;
+  color: #e27f6b;
 }
 
 .section-heading h2 span {
@@ -198,7 +192,7 @@ body {
 
 .main-blue-button a {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: #e27f6b;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -298,7 +292,7 @@ header
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #03a4ed;
+    color: #e27f6b;
     line-height: 100px;
     float: left;
     -webkit-transition: all 0.3s ease 0s;
@@ -387,7 +381,7 @@ header
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  background-color: #03a4ed;
+  background-color: #e27f6b;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -882,7 +876,7 @@ Banner Style
 }
 
 .main-banner .left-content h2 em {
-  color: #03a4ed;
+  color: #e27f6b;
   font-style: normal;
 }
 
@@ -921,7 +915,7 @@ Banner Style
 .main-banner .left-content form input {
   width: 470px;
   height: 66px;
-  background-color: #03a4ed;
+  background-color: #e27f6b;
   border-radius: 33px;
   border: none;
   outline: none;
@@ -1020,7 +1014,7 @@ Services Style
   top: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #03a4ed;
+  color: #e27f6b;
 }
 
 .our-services .first-bar span {
@@ -1397,7 +1391,7 @@ form#contact textarea::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: #03a4ed;
+  background-color: #e27f6b;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -2233,7 +2227,7 @@ background: white;
   .custom-megamenu-dropdown-column a i {
     font-size: 20px;
     margin-right: 10px;
-    color: #03a4ed;
+    color: #e27f6b;
   }
 
   .custom-megamenu-dropdown-column a p {
@@ -2243,7 +2237,7 @@ background: white;
   }
 
   .custom-megamenu-dropdown-column a:hover {
-    border: 1px solid #03a4ed;
+    border: 1px solid #e27f6b;
     background-color: #03a3ed19;
   }
 
@@ -2289,3 +2283,8 @@ background: white;
       margin-bottom: 0px;
     }
   }
+
+
+  
+
+  
