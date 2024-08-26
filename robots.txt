@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /private/
+Allow: /
+Sitemap: https://mitmol.com/sitemap.xml
