@@ -835,27 +835,6 @@ Banner Style
   overflow: hidden;
 }
 
-.main-banner:after {
-  content: '';
-  background-image: url(../images/baner-dec-left.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 100px;
-  width: 193px;
-  height: 467px;
-}
-
-.main-banner:before {
-  content: '';
-  background-image: url(../images/baner-dec-right.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 0;
-  top: 100px;
-  width: 98px;
-  height: 290px;
-}
 
 .main-banner .left-content {
   margin-right: 45px;
@@ -2283,8 +2262,27 @@ background: white;
     .custom-megamenu-dropdown-column{
       margin-bottom: 0px;
     }
+    .mobilehide{
+      display: block;
+    }
+
+    .desktophide{
+      display: none;
+    }
   }
 
+.main-banner{
+background: url('../images/bg-banner.png');
+background-position: left center;
+background-repeat: no-repeat;
+background-size: contain;
+}
 
+.mobilehide{
+  display: none;
+}
 
+.desktophide{
+  display: block;
+}
   
