@@ -46,10 +46,20 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(to right, #2d3091, #df6f5a);
+      background: url('./assets/images/services.png') ;
+  background-position: center;
+  background-size: cover;
       color: #ffffff;
       padding: 80px 20px;
       text-align: center;
+    }
+
+    .overlayservice{
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
     }
 
     .top-section h1 {
@@ -57,6 +67,7 @@
       margin-bottom: 20px;
       font-weight: 700;
       line-height: 1.2;
+      z-index: 2;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
@@ -66,10 +77,12 @@
       font-weight: 300;
       max-width: 800px;
       line-height: 1.6;
+      z-index: 2;
       color: white;
     }
 
     .top-section .cta-button {
+      z-index: 2;
       background-color: #ffffff;
       color: #03a4ed;
       border: none;
@@ -91,12 +104,14 @@
     .top-section .service-icons {
       margin-top: 40px;
       display: flex;
+      z-index: 2;
       justify-content: center;
       flex-wrap: wrap;
     }
 
     .top-section .service-icons div {
       margin: 0 20px;
+      z-index: 2;
       text-align: center;
       transition: transform 0.3s ease-in-out;
     }
@@ -262,7 +277,10 @@
   
 
 
-    <section class="top-section">
+    <section class="top-section" id="service_hero">
+      <div class="overlayservice">
+
+      </div>
         <h1>Our Outstanding Services</h1>
         <p>Explore our wide range of services designed to deliver excellence and efficiency tailored to your needs. We are committed to providing top-notch solutions for all your requirements.</p>
         <a href="./contact.html" class="cta-button">Connect With Us</a>
