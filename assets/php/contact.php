@@ -10,8 +10,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Collect and sanitize input data
     $name = sanitizeInput($_POST['name']);
-    $surname = sanitizeInput($_POST['surname']);
     $email = sanitizeInput($_POST['email']);
+    $phone = sanitizeInput($_POST['phone']);
     $message = sanitizeInput($_POST['message']);
 
     // Validate email
@@ -29,16 +29,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
+    // Validate phone number (basic validation to check if it's numeric and of reasonable length)
+    if (!preg_match("/^[0-9]{10,15}$/", $phone)) {
+        // Redirect to the homepage if the phone number is invalid
+        header("Location: https://www.mitmol.com/");
+        exit;
+    }
+
     // Email details
     $to = "info@mitmol.com";
-    // $to = "amarvcode@gmail.com";
-
     $subject = "New Contact Form Submission";
 
     // Construct the email body
     $email_body = "You have received a new message from your website contact form.\n\n";
-    $email_body .= "Name: $name $surname\n";
+    $email_body .= "Name: $name\n";
     $email_body .= "Email: $email\n";
+    $email_body .= "Phone: $phone\n";
     $email_body .= "Message:\n$message\n";
 
     // Email headers
