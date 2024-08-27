@@ -141,12 +141,12 @@ body {
 }
 
 ::selection {
-  background: #e27f6b;
+  background: #5185ff;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #e27f6b;
+  background: #5185ff;
   color: #fff;
 }
 
@@ -183,16 +183,16 @@ body {
 
 .section-heading h2 em {
   font-style: normal;
-  color: #e27f6b;
+  color: #5185ff;
 }
 
 .section-heading h2 span {
   color: #2e3192;
 }
 
-.main-blue-button a {
+.main-#5185ff-button a {
   display: inline-block;
-  background-color: #e27f6b;
+  background-color: #5185ff;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -292,7 +292,7 @@ header
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #e27f6b;
+    color: #5185ff;
     line-height: 100px;
     float: left;
     -webkit-transition: all 0.3s ease 0s;
@@ -381,7 +381,7 @@ header
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  background-color: #e27f6b;
+  background-color: #5185ff;
 }
 
 .header-area .main-nav .nav li.submenu {
@@ -855,7 +855,7 @@ Banner Style
 }
 
 .main-banner .left-content h2 em {
-  color: #e27f6b;
+  color: #5185ff;
   font-style: normal;
 }
 
@@ -894,7 +894,7 @@ Banner Style
 .main-banner .left-content form input {
   width: 470px;
   height: 66px;
-  background-color: #e27f6b;
+  background-color: #5185ff;
   border-radius: 33px;
   border: none;
   outline: none;
@@ -993,7 +993,7 @@ Services Style
   top: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #e27f6b;
+  color: #5185ff;
 }
 
 .our-services .first-bar span {
@@ -1026,7 +1026,7 @@ Services Style
 
 .our-services .progress-skill-bar .filled-bar {
   background: rgb(255,77,30);
-  background: linear-gradient(105deg, #e27f6b 0%, #2e3192 100%);
+  background: linear-gradient(105deg, #5185ff 0%, #2e3192 100%);
   height: 6px;
   border-radius: 3px;
   margin-bottom: -6px;
@@ -1082,7 +1082,7 @@ Portfolio
 
 .our-portfolio .hidden-content {
   background: rgb(255,77,30);
-  background: linear-gradient(105deg, #e27f6b 0%, #2e3192 100%);
+  background: linear-gradient(105deg, #5185ff 0%, #2e3192 100%);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
@@ -1209,7 +1209,7 @@ Blog
   margin: 20px 0px 15px 0px;
 }
 
-.our-blog .left-image .info .main-blue-button {
+.our-blog .left-image .info .main-#5185ff-button {
   position: absolute;
   bottom: -80px;
   left: 0;
@@ -1371,7 +1371,7 @@ form#contact textarea::placeholder {
 
 form#contact button {
   display: inline-block;
-  background-color: #e27f6b;
+  background-color: #5185ff;
   font-size: 15px;
   font-weight: 400;
   color: #fff;
@@ -1452,7 +1452,7 @@ responsive
   }
   .about-us .services .item  {
     background: rgb(255,77,30);
-    background: linear-gradient(105deg, #e27f6b 0%, #2e3192 100%);
+    background: linear-gradient(105deg, #5185ff 0%, #2e3192 100%);
     padding: 30px;
     border-radius: 20px;
     display: inline-block;
@@ -1493,7 +1493,7 @@ responsive
     position: relative;
     margin-right: 0px;
   }
-  .our-blog .left-image .info .main-blue-button {
+  .our-blog .left-image .info .main-#5185ff-button {
     position: relative;
     bottom: 0px;
     margin-top: 30px;
@@ -1587,7 +1587,7 @@ responsive
 
 
 .custom-footer {
-  background: linear-gradient(135deg, #e27f6b33, #2e31926c); /* Light red to light blue gradient */
+  background: linear-gradient(135deg, #5185ff33, #2e31926c); /* Light red to light #5185ff gradient */
   color: #333;
   padding: 40px 20px;
   font-size: 14px;
@@ -1633,7 +1633,7 @@ responsive
 }
 
 .footer-section ul li a:hover {
-  color: #1e90ff; /* Light blue color */
+  color: #1e90ff; /* Light #5185ff color */
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
@@ -2000,7 +2000,7 @@ responsive
 }
 
 .values-item {
-  background: #fff;
+  background: linear-gradient(130deg, #1e8fff22, #2e31922e);
   border-radius: 12px;
   padding: 2rem;
   margin: 1rem;
@@ -2021,14 +2021,15 @@ responsive
   top: -20px;
   left: 50%;
   transform: translateX(-50%);
-  background: #fff;
+  background: #ffffff38;
   border-radius: 50%;
   padding: 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .values-icon svg {
-  fill: #fff;
+  fill: transparent;
+visibility: hidden;
 }
 
 .values-item h3 {
@@ -2207,7 +2208,7 @@ background: white;
   .custom-megamenu-dropdown-column a i {
     font-size: 20px;
     margin-right: 10px;
-    color: #e27f6b;
+    color: #5185ff;
   }
 
   .custom-megamenu-dropdown-column a p {
@@ -2217,7 +2218,7 @@ background: white;
   }
 
   .custom-megamenu-dropdown-column a:hover {
-    border: 1px solid #e27f6b;
+    border: 1px solid #5185ff;
     background-color: #03a3ed19;
   }
 
