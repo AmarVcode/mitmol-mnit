@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2e3192, #5185ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #e0e0ff;
+    font-weight: 300;
+}
+
+.progress-bar {
+    background-color: #ffffff;
+    border-radius: 25px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #5185ff;
+    height: 100%;
+    width: 60%;
+    animation: progressAnimation 3s ease-in-out infinite;
+}
+
+@keyframes progressAnimation {
+    0% { width: 0%; }
+    50% { width: 60%; }
+    100% { width: 100%; }
+}
+
+.circle-bg {
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+    animation: circleAnimation 10s linear infinite;
+}
+
+@keyframes circleAnimation {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(180deg); }
+    100% { transform: scale(1) rotate(360deg); }
+}
+
+    </style>
+    <div class="container">
+        <div class="circle-bg"></div>
+        <div class="content">
+            <h1>Coming Soon</h1>
+            <p>We're working hard to launch our new website. Stay tuned for something awesome!</p>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
