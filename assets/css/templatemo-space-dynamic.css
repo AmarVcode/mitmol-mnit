@@ -945,12 +945,10 @@ About Us Style
 }
 
 .about-us .services .item {
-  background: rgb(255,77,30);
   padding: 20px;
   border-radius: 20px;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-  backdrop-filter: blur(1px) saturate(150%);
+  background: url(../images/bg-card-home.jpg);
   margin: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   
@@ -966,14 +964,16 @@ About Us Style
 }
 
 .about-us .services .item h4 {
-  color: #2e3192;
+  color: #fff;
   font-size: 20px;
+  text-shadow: 0px 0px 10px black;
   font-weight: 700;
   margin-bottom: 12px;
 }
 
 .about-us .services .item p {
-  color: #2e3192;
+  text-shadow: 0px 0px 10px black;
+  color: #fff;
 }
 
 
@@ -1281,22 +1281,35 @@ contact
 */
 
 .contact-us {
+  position: relative;
   margin-block: 30px;
-  padding: 130px 0px;
-  background-image: url(../images/about-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  padding: 130px 0;
+  background-image: url(../images/about-bg.png);
+  z-index: 1;
 }
+
+.contact-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e8fff6b; /* Adjust the color and opacity as needed */
+  z-index: -1;
+}
+
+
 
 .contact-us .section-heading h2,
 .contact-us .section-heading h2 em,
 .contact-us .section-heading h2 span {
-  color: #2e3192;
+  text-shadow: 0px 0px 10px black;
+  color: #fff;
 }
 
 .contact-us .section-heading p {
-  color: #2e3192;
+  color: #fff;
   margin-top: 30px;
 }
 
@@ -1307,7 +1320,7 @@ contact
 .phone-info h4 {
   font-size: 20px;
   font-weight: 700;
-  color: #2e3192;
+  color: #fff;
 }
 
 .phone-info h4 span i {
@@ -1316,16 +1329,16 @@ contact
   display: inline-block;
   text-align: center;
   line-height: 46px;
-  background-color: #2e3192;
+  background-color: #fff;
   border-radius: 50%;
-  color: #ffffff;
+  color: #2e3192;
   font-size: 22px;
   margin-left: 30px;
   margin-right: 15px;
 }
 
 .phone-info h4 span a {
-  color: #2e3192;
+  color: #fff;
   font-size: 15px;
   font-weight: 400;
 }
@@ -1343,11 +1356,9 @@ form#contact .contact-dec img {
 form#contact {
   margin-left: 30px;
   position: relative;
-  background: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-  backdrop-filter: blur(1px) saturate(150%);
   margin: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 60px 30px;
+  background: #2e3192;
   border-radius: 20px;
 }
 
@@ -2170,7 +2181,6 @@ visibility: hidden;
 }
 
 #let_change_header_height{
-  position: sticky;
   top: 0px;
   z-index: 1000;
 }
@@ -2331,4 +2341,8 @@ background: url('../images/bg-banner.png');
 #about .icon img {
   filter: hue-rotate(240deg) saturate(72%) brightness(92%);
   mix-blend-mode: screen;
+}
+
+.top-gap-header{
+  padding: 40px;
 }
