@@ -1295,7 +1295,6 @@ contact
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1e8fff6b; /* Adjust the color and opacity as needed */
   z-index: -1;
 }
 
@@ -1304,12 +1303,20 @@ contact
 .contact-us .section-heading h2,
 .contact-us .section-heading h2 em,
 .contact-us .section-heading h2 span {
-  text-shadow: 0px 0px 10px black;
-  color: #fff;
+  color: #2e3192;
+}
+
+.blur-bg-white{
+  position: relative;
+  padding: 50px 30px;
+  border-radius: 20px;
+  background: #2e319233;
+  backdrop-filter: blur(15px) brightness(1.2);
+  box-shadow: 0px 0px 20px #6868684b;
 }
 
 .contact-us .section-heading p {
-  color: #fff;
+  color: #2e3192;
   margin-top: 30px;
 }
 
@@ -1329,16 +1336,16 @@ contact
   display: inline-block;
   text-align: center;
   line-height: 46px;
-  background-color: #fff;
+  background-color: #2e3192;
   border-radius: 50%;
-  color: #2e3192;
+  color: #fff;
   font-size: 22px;
   margin-left: 30px;
   margin-right: 15px;
 }
 
 .phone-info h4 span a {
-  color: #fff;
+  color: #2e3192;
   font-size: 15px;
   font-weight: 400;
 }
