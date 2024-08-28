@@ -38,6 +38,8 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+
+
 /* clear fix */
 .grid:after {
   content: '';
@@ -255,7 +257,7 @@ header
 }
 
 .header-area {
-  background-color: #1e8fff2d;
+  background-color: #d7ebff;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -829,14 +831,20 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 226px 0px 120px 0px;
+  padding: 120px 0px 120px 0px;
   position: relative;
   overflow: hidden;
+  
 }
 
 
+
+
 .main-banner .left-content {
+  background:white;
+  position: relative;
   margin-right: 45px;
+  z-index: 200;
 }
 
 .main-banner .left-content h6 {
@@ -2273,6 +2281,7 @@ background: white;
 
 .main-banner{
   position: relative;
+  
 }
 
 .main-banner::before {
@@ -2280,11 +2289,11 @@ background: url('../images/bg-banner.png');
   content: '';
   position: absolute;
   top: 0;
-  left: -60%;
+  left: 0;
   right: 0;
   bottom: 0;
   background-size: 25%;
-  background-position: center;
+  background-position: top left;
   z-index: 1; 
   background-repeat: no-repeat;
 }
@@ -2297,3 +2306,12 @@ background: url('../images/bg-banner.png');
   display: block;
 }
   
+
+#carouselExampleIndicators{
+  margin-top: 0px;
+}
+
+#about .icon img {
+  filter: hue-rotate(240deg) saturate(72%) brightness(92%);
+  mix-blend-mode: screen;
+}
