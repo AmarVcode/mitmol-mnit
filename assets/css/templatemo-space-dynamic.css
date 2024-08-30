@@ -936,8 +936,8 @@ About Us Style
   background-image: url(../images/about-img-bg-line.png);
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 100%;
   padding: 140px 0px 120px 0px;
+  background-size: cover;
 }
 
 .about-us .left-image {
@@ -950,7 +950,8 @@ About Us Style
   display: inline-block;
   background: #d6f8ff;
   margin: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  border: 1px solid rgb(0, 0, 0, 0.4);
   
 }
 
@@ -1285,8 +1286,8 @@ contact
   background-image: url(../images/bg-home-contact.png);
   z-index: 1;
   background-repeat: no-repeat;
-  background-position: left bottom;
-  /* background-size: contain; */
+  background-position: right bottom;
+  background-size: cover;
 }
 
 .contact-us::before {
