@@ -235,7 +235,7 @@ header
 */
 
 .background-header {
-  height: 80px!important;
+  height: 90px!important;
   position: fixed!important;
   top: 0px;
   left: 0px;
@@ -249,7 +249,7 @@ header
 }
 
 header .logo{
-  transform: scale(1.2);
+  height: 80px !important;
 }
 
 .background-header .main-nav .nav li:hover a {
