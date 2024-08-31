@@ -164,6 +164,155 @@
 
   </div>
 
+  <style>
+
+.product-gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.product-gallery h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-item-title {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.know-more-btn {
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #03a4ed;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+    background-color: #0282bf;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gallery-item {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: calc(100% - 20px);
+    }
+}
+
+  </style>
+
+
+  <section class="product-gallery">
+    <h1>Special Accessories</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200" alt="Ribbon Blenders">
+            <div class="gallery-item-title">Ribbon Blenders</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200" alt="Bulk Bag Dispensers">
+            <div class="gallery-item-title">Bulk Bag Dispensers</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200" alt="Rotary Airlocks">
+            <div class="gallery-item-title">Rotary Airlocks</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200" alt="Knife Gates">
+            <div class="gallery-item-title">Knife Gates</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200" alt="Divertor Chutes">
+            <div class="gallery-item-title">Divertor Chutes</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200" alt="Merger Conveyors">
+            <div class="gallery-item-title">Merger Conveyors</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200" alt="Traffic Cops, Stoppers">
+            <div class="gallery-item-title">Traffic Cops, Stoppers</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://via.placeholder.com/300x200" alt="Ball Tables">
+            <div class="gallery-item-title">Ball Tables</div>
+        </div>
+    </div>
+    <button class="know-more-btn">Know More</button>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
 
 .belt-conveyor-section {
@@ -244,7 +393,7 @@
   
 
 
-
+<!-- 
 
     <section class="belt-conveyor-section py-5">
         <div class="container">
@@ -283,8 +432,8 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section> -->
+<!-- 
 <style>
   /* Light Blue Background */
 .bg-light-blue {
@@ -444,7 +593,7 @@
           </div>
           <div class="col-lg-6">
               <div class="info-box bg-white p-4 rounded mb-4 shadow-sm">
-                  <h3 class="info-heading">Efficient Bulk Movement</h3>
+                  <h3 class="info-heading"      >Efficient Bulk Movement</h3>
                   <p class="info-text">Designed for efficiently moving bulk materials, ensuring high capacity and performance.</p>
               </div>
               <div class="info-box bg-white p-4 rounded mb-4 shadow-sm">
@@ -462,7 +611,7 @@
           </div>
       </div>
   </div>
-</section>
+</section> -->
 
 
 
