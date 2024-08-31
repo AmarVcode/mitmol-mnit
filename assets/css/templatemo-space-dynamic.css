@@ -248,6 +248,10 @@ header
   color: #1e1e1e!important;
 }
 
+.right-image img{
+  border-radius: 10px;
+}
+
 header .logo{
 transform: scale(1.5);
 }
