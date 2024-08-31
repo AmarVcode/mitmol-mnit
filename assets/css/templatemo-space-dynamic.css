@@ -249,7 +249,7 @@ header
 }
 
 header .logo{
-  height: 90px !important;
+transform: scale(1.5);
 }
 
 .background-header .main-nav .nav li:hover a {
