@@ -180,3 +180,35 @@ const footerHTML = `
 // Select the footer element and replace its inner HTML
 document.querySelector('footer').innerHTML = null;
 document.querySelector('footer').innerHTML = footerHTML;
+
+
+
+
+
+
+
+
+
+
+//logo injecting
+// JavaScript to clear the logo class div and inject new content
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the first logo class div
+  const logoDiv = document.querySelector('.logo');
+  
+  // Clear the content of the div
+  if (logoDiv) {
+      logoDiv.innerHTML = '';
+      
+      // Create new content
+      const newContent = `
+          <img src="./assets/images/Mit-Mol-Logo-12-new.png" alt="website logo" style="height: 60px; width: auto; margin: auto;">
+          <marquee behavior="" direction="left" style="position: absolute; color: red; font-size: 0.6rem; margin-bottom: -65px;">
+              Conveying Excellence since 1990
+          </marquee>
+      `;
+      
+      // Inject the new content into the div
+      logoDiv.innerHTML = newContent;
+  }
+});
