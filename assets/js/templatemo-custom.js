@@ -190,28 +190,103 @@ document.querySelector('footer').innerHTML = footerHTML;
 
 
 
-//logo injecting
+//inecting header
 
-  const logoDiv = document.getElementsByClassName('logo');
-  
-  // Clear the content of the div
-      logoDiv[0].innerHTML = '';
-      
-      // Create new content
-      const newContent = `
-          <img src="./assets/images/Mit-Mol-Logo-12-new.png" alt="website logo" style="height: 60px; width: auto; margin: auto;">
-          <marquee behavior="" direction="left" style="position: absolute; color: red; font-size: 0.6rem; margin-bottom: -65px;">
-              Conveying Excellence since 1990
-          </marquee>
-      `;
-      
-      // Inject the new content into the div
-      logoDiv[0].innerHTML = newContent;
+const header_code = `<div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo" style="display: grid; grid-template-columns: 100%; align-items: center; justify-content: center;">
+              <img src="./assets/images/Mit-Mol-Logo-12-new.png" alt="website logo" style="height: 60px; width: auto; margin: auto;">
+              <marquee behavior="" direction="left" style="position: absolute; color: red; font-size: 0.6rem; margin-bottom: -65px;">Conveying Excellence since 1990</marquee>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="./index.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="./about.html">About Us</a></li>
+              <li class="scroll-to-section"><a href="#" onclick="megamenufun()">Our Products</a></li>
+              <li class="scroll-to-section"><a href="./service.html">Our Services</a></li>
+              <li class="scroll-to-section"><a href="./career.html">Career</a></li>
+              <li class="scroll-to-section">
+                <div class="main-red-button"><a href="./contact.html">Contact Now</a></div>
+              </li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="custom-megamenu-dropdown-content" id="megamenu_my">
+      <div class="custom-megamenu-dropdown-row">
+        <div class="custom-megamenu-dropdown-column">
+          <a href="belt_conveyors.html">
+            <i class="fas fa-cogs"></i> Belt Conveyors
+            <p>Efficient bulk material transport.</p>
+          </a>
+          <a href="chain_conveyors.html">
+            <i class="fas fa-link"></i> Chain Conveyors
+            <p>Durable solution for heavy-duty tasks.</p>
+          </a>
+          <a href="screw_conveyors.html">
+            <i class="fas fa-arrow-right"></i> Screw Conveyors
+            <p>Granular material transport.</p>
+          </a>
+        </div>
+        <div class="custom-megamenu-dropdown-column">
+          <a href="roller_conveyors.html">
+            <i class="fas fa-recycle"></i> Roller Conveyors
+            <p>Reliable unit load movement.</p>
+          </a>
+          <a href="./wire_mesh_belt_conveyors.html">
+            <i class="fas fa-angle-double-up"></i> Wire Mesh Belt Conveyors
+            <p>Vertical material handling.</p>
+          </a>
+          <a href="bucket_conveyors.html">
+            <i class="fas fa-box"></i> Bucket Conveyors
+            <p>For vertical bulk material transport.</p>
+          </a>
+        </div>
+        <div class="custom-megamenu-dropdown-column">
+          <a href="drag_conveyors.html">
+            <i class="fas fa-dolly"></i> Drag Conveyors
+            <p>For abrasive material handling.</p>
+          </a>
+          <a href="excavators.html">
+            <i class="fas fa-truck-loading"></i> Excavators
+            <p>Heavy-duty material excavation.</p>
+          </a>
+          <a href="multiple_discharge_conveyors.html">
+            <i class="fas fa-external-link-alt"></i> Multiple Discharge Conveyors
+            <p>Multiple point material discharge.</p>
+          </a>
+        </div>
+        <div class="custom-megamenu-dropdown-column">
+          <a href="modular_flex_conveyors.html">
+            <i class="fas fa-random"></i> Modular Flex Conveyors
+            <p>Flexible systems for dynamic layouts.</p>
+          </a>
+          <a href="telescopic_conveyors.html">
+            <i class="fas fa-expand-arrows-alt"></i> Telescopic Conveyors
+            <p>Extendable conveyors for optimized loading.</p>
+          </a>
+          <a href="special_accessories_products.html">
+            <i class="fas fa-tools"></i> Special Accessories/Products
+            <p>Customized solutions for unique needs.</p>
+          </a>
+        </div>
+      </div>
+    </div>`
 
-      console.log(logoDiv[0])
 
 
-
+// Select the header element and replace its inner HTML
+document.querySelector('#let_change_header_height').innerHTML = null;
+document.querySelector('#let_change_header_height').innerHTML = header_code;
 
 
 
