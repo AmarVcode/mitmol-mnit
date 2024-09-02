@@ -191,14 +191,11 @@ document.querySelector('footer').innerHTML = footerHTML;
 
 
 //logo injecting
-// JavaScript to clear the logo class div and inject new content
-document.addEventListener('DOMContentLoaded', function() {
-  // Select the first logo class div
-  const logoDiv = document.querySelector('.logo');
+
+  const logoDiv = document.getElementsByClassName('logo');
   
   // Clear the content of the div
-  if (logoDiv) {
-      logoDiv.innerHTML = '';
+      logoDiv[0].innerHTML = '';
       
       // Create new content
       const newContent = `
@@ -209,6 +206,40 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       
       // Inject the new content into the div
-      logoDiv.innerHTML = newContent;
-  }
-});
+      logoDiv[0].innerHTML = newContent;
+
+      console.log(logoDiv[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// counting
+
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const yearsCountElement = document.getElementById('years-count');
+        let years = 0;
+        const targetYears = 34;
+        
+        const updateCount = () => {
+          if (years < targetYears) {
+            years++;
+            yearsCountElement.textContent = years;
+            setTimeout(updateCount, 50); // Adjust the speed of counting here
+          }
+        };
+      
+        updateCount();
+      });
+      
