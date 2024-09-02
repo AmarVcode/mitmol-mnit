@@ -253,7 +253,9 @@ header
 }
 
 header .logo{
-transform: scale(1.5);
+transform: scale(1.2) !important;
+position: relative;
+top:10px;
 }
 
 .background-header .main-nav .nav li:hover a {
