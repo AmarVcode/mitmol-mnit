@@ -169,9 +169,10 @@ color: white;
 
 .custom_about-header-overlay {
   background: rgba(0, 0, 0, 0.4);
-  padding: 30px;
-  display: inline-block;
+  display: block;
   border-radius: 10px;
+  height: 100%;
+  width: 100vw;
 }
 
 .custom_about-header h1 {
@@ -366,14 +367,14 @@ body {
 .custom_about-header-overlay {
   position: relative;
   padding: 40px;
-  background: rgba(0, 0, 0, 0.7); /* Darker background for better text contrast */
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Stronger shadow for depth */
-  max-width: 90%;
-  margin: auto;
   z-index: 2; /* Ensure overlay is above the video */
-  transform: translateY(10px);
   transition: transform 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .custom_about-header-overlay:hover {
@@ -412,10 +413,7 @@ body {
     padding: 20px;
   }
 
-  .custom_about-header-overlay {
-    padding: 20px;
-    max-width: 95%;
-  }
+
 
   .custom_about-header h1 {
     font-size: 2.5rem; /* Smaller font size for smaller screens */
@@ -438,7 +436,7 @@ body {
     <h1>About Mit-Mol Conveyors Pvt. Ltd.</h1>
     <p>Leading the way in conveyor solutions since 1990</p>
     <div class="counting-animation">
-      <span id="years-count">34</span> years and counting
+      <span id="years-count">34</span> years in Industry
     </div>
   </div>
 </header>
