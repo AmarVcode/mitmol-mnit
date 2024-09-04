@@ -939,7 +939,7 @@ About Us Style
 }
 
 .about-us {
-  background-image: url(../images/about-img-bg-line.png);
+  background-image: url(../images/about-img-bg-line.png) !important;
   background-repeat: no-repeat;
   background-position: center bottom;
   padding: 140px 0px 120px 0px;
@@ -1004,6 +1004,7 @@ Services Style
 .our-services {
   margin-top: 0px;
   padding-top: 120px;
+  padding-bottom: 100px;
 }
 
 .our-services .left-image {
@@ -1301,12 +1302,13 @@ contact
 .contact-us {
   position: relative;
   margin-block: 30px;
-  padding: 130px 0;
+  padding: 130px 0px;
   background-image: url(../images/bg-home-contact.png);
   z-index: 1;
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: cover;
+  margin-bottom: 100px;
 }
 
 .contact-us::before {
@@ -1511,15 +1513,7 @@ responsive
   .about-us .services {
     text-align: center;
   }
-  .about-us .services .item  {
-    background: rgb(255,77,30);
-    padding: 30px;
-    border-radius: 20px;
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    backdrop-filter: blur(10px) saturate(150%);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  }
+
   .about-us .services .item .right-text {
     text-align: left;
   }
@@ -2118,7 +2112,7 @@ visibility: hidden;
 
 
 .goals-section {
-  background: #f5f7fa;
+  background: #cbe5ff;
   padding: 5rem 0;
   position: relative;
 }
