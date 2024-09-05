@@ -1960,7 +1960,7 @@ responsive
 
 
 #missionSection {
-  background-color: #f4f4f4;
+  background-color: #cbe5ff;
   padding: 5rem 0;
 }
 
@@ -1988,6 +1988,7 @@ responsive
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 2rem;
+  background: white;
 }
 
 .mission-card:hover {
