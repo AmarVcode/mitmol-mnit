@@ -1007,6 +1007,11 @@ Services Style
   padding-bottom: 100px;
 }
 
+#missionSection p{
+  padding-inline: 40px;
+}
+
+
 .our-services .left-image {
   margin-right: 45px;
 }
@@ -2454,3 +2459,67 @@ background: url('../images/bg-banner.png');
   }
 }
 
+
+
+#custom_product_cta .btn-primary {
+  background: linear-gradient(135deg, #0A3D62, #1E90FF); /* Dark blue to light blue */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+#custom_product_cta .btn-primary:hover {
+  background: linear-gradient(135deg, #1E90FF, #0A3D62); /* Reverse the gradient on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#custom_product_cta .btn-primary:active {
+  transform: translateY(0); /* Reset lift on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Reduce shadow on click */
+}
+
+
+#custom_product_cta .btn-secondary {
+  background: linear-gradient(135deg,#1E90FF, #0A3D62); /* Reverse the gradient on hover */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+#custom_product_cta .btn-secondary:hover {
+  background: linear-gradient(135deg, #0A3D62,#1E90FF); /* Light blue to dark blue */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#custom_product_cta .btn-secondary:active {
+  transform: translateY(0); /* Reset lift on click */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Reduce shadow on click */
+}
+
+#custom_product_cta .btn-secondary i {
+  display: none;
+  }
+
+  #custom_product_industries .col-md-4{
+padding-bottom: 50px;
+  }
+
+  #custom_product_industries .row{
+justify-content: center;
+  }

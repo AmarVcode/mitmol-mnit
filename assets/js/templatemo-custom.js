@@ -237,20 +237,7 @@ const header_code = `<div class="container">
             <p>Granular material transport.</p>
           </a>
         </div>
-        <div class="custom-megamenu-dropdown-column">
-          <a href="roller_conveyors.html">
-            <i class="fas fa-recycle"></i> Roller Conveyors
-            <p>Reliable unit load movement.</p>
-          </a>
-          <a href="./wire_mesh_belt_conveyors.html">
-            <i class="fas fa-angle-double-up"></i> Wire Mesh Belt Conveyors
-            <p>Vertical material handling.</p>
-          </a>
-          <a href="bucket_conveyors.html">
-            <i class="fas fa-box"></i> Bucket Conveyors
-            <p>For vertical bulk material transport.</p>
-          </a>
-        </div>
+       
         <div class="custom-megamenu-dropdown-column">
           <a href="drag_conveyors.html">
             <i class="fas fa-dolly"></i> Drag Conveyors
@@ -277,6 +264,20 @@ const header_code = `<div class="container">
           <a href="special_accessories_products.html">
             <i class="fas fa-tools"></i> Special Accessories/Products
             <p>Customized solutions for unique needs.</p>
+          </a>
+        </div>
+         <div class="custom-megamenu-dropdown-column">
+          <a href="roller_conveyors.html">
+            <i class="fas fa-recycle"></i> Roller Conveyors
+            <p>Reliable unit load movement.</p>
+          </a>
+          <!--<a href="./wire_mesh_belt_conveyors.html">
+            <i class="fas fa-angle-double-up"></i> Wire Mesh Belt Conveyors
+            <p>Vertical material handling.</p>
+          </a>--->
+          <a href="bucket_conveyors.html">
+            <i class="fas fa-box"></i> Bucket Conveyors
+            <p>For vertical bulk material transport.</p>
           </a>
         </div>
       </div>
