@@ -147,16 +147,15 @@ const footerHTML = `
         <div class="footer-section">
             <h3>Products</h3>
             <ul>
-                <li><a href="./wire_mesh_belt_conveyors.html">Wire Mesh Belt Elevators</a></li>
-                <li><a href="./bucket_conveyors.html">Bucket Conveyors</a></li>
                 <li><a href="./drag_conveyors.html">Drag Conveyors</a></li>
-                <li><a href="./excavators.html">Excavators</a></li>
+                <li><a href="./excavators.html">Excavators/Vertical Conveyors</a></li>
+                <li><a href="./multiple_discharge_conveyors.html">Multiple Discharge Conveyors</a></li>
+                <li><a href="./bucket_conveyors.html">Bucket Conveyors</a></li>
             </ul>
         </div>
         <div class="footer-section">
             <h3>Products</h3>
             <ul>
-                <li><a href="./multiple_discharge_conveyors.html">Multiple Discharge Conveyors</a></li>
                 <li><a href="./modular_flex_conveyors.html">Modular Flex Conveyors</a></li>
                 <li><a href="./telescopic_conveyors.html">Telescopic Conveyors</a></li>
                 <li><a href="./special_accessories_products.html">Special Accessories/Products</a></li>
@@ -176,6 +175,7 @@ const footerHTML = `
         <p>&copy; 2002 MIT - MOL CONVEYORS PVT. LTD. All Rights Reserved</p>
     </div>
 `;
+
 
 // Select the footer element and replace its inner HTML
 document.querySelector('footer').innerHTML = null;
@@ -226,40 +226,46 @@ const header_code = `<div class="container">
         <div class="custom-megamenu-dropdown-column">
           <a href="belt_conveyors.html">
             <i class="fas fa-cogs"></i> Belt Conveyors
-            <p>Efficient bulk material transport.</p>
+            <p>Efficient bulk and unit material handling system</p>
           </a>
           <a href="chain_conveyors.html">
             <i class="fas fa-link"></i> Chain Conveyors
-            <p>Durable solution for heavy-duty tasks.</p>
+            <p>Durable solution for light and heavy duty tasks</p>
           </a>
           <a href="screw_conveyors.html">
             <i class="fas fa-arrow-right"></i> Screw Conveyors
-            <p>Granular material transport.</p>
+            <p>For bulk solid handling application in
+manufacturing and processing units</p>
           </a>
         </div>
        
         <div class="custom-megamenu-dropdown-column">
           <a href="drag_conveyors.html">
             <i class="fas fa-dolly"></i> Drag Conveyors
-            <p>For abrasive material handling.</p>
+            <p>Durable and long life system for movement of
+bulk materials</p>
           </a>
           <a href="excavators.html">
-            <i class="fas fa-truck-loading"></i> Excavators
-            <p>Heavy-duty material excavation.</p>
+            <i class="fas fa-truck-loading"></i> ESCAVEYORS/VERTICAL
+CONVEYOR
+            <p>For vertically handling unit loads between 2 or more level</p>
           </a>
           <a href="multiple_discharge_conveyors.html">
             <i class="fas fa-external-link-alt"></i> Multiple Discharge Conveyors
-            <p>Multiple point material discharge.</p>
+            <p>A single system to convey and elevate products
+to multiple locations</p>
           </a>
         </div>
         <div class="custom-megamenu-dropdown-column">
           <a href="modular_flex_conveyors.html">
             <i class="fas fa-random"></i> Modular Flex Conveyors
-            <p>Flexible systems for dynamic layouts.</p>
+            <p>Adaptive unit handling systems for versatile and
+dynamic layouts.</p>
           </a>
           <a href="telescopic_conveyors.html">
             <i class="fas fa-expand-arrows-alt"></i> Telescopic Conveyors
-            <p>Extendable conveyors for optimized loading.</p>
+            <p>Extendable conveyors designed for efficient
+loading and unloading operations</p>
           </a>
           <a href="special_accessories_products.html">
             <i class="fas fa-tools"></i> Special Accessories/Products
@@ -269,7 +275,7 @@ const header_code = `<div class="container">
          <div class="custom-megamenu-dropdown-column">
           <a href="roller_conveyors.html">
             <i class="fas fa-recycle"></i> Roller Conveyors
-            <p>Reliable unit load movement.</p>
+            <p>Reliable system for light and heavy units</p>
           </a>
           <!--<a href="./wire_mesh_belt_conveyors.html">
             <i class="fas fa-angle-double-up"></i> Wire Mesh Belt Conveyors
