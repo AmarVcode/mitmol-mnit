@@ -148,7 +148,7 @@ const footerHTML = `
             <h3>Products</h3>
             <ul>
                 <li><a href="./drag_conveyors.html">Drag Conveyors</a></li>
-                <li><a href="./excavators.html">Excavators/Vertical Conveyors</a></li>
+                <li><a href="./excavators.html">Escaveyors/Vertical Conveyors</a></li>
                 <li><a href="./multiple_discharge_conveyors.html">Multiple Discharge Conveyors</a></li>
                 <li><a href="./bucket_conveyors.html">Bucket Conveyors</a></li>
             </ul>
@@ -193,101 +193,102 @@ document.querySelector('footer').innerHTML = footerHTML;
 //inecting header
 
 const header_code = `<div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo" style="display: grid; grid-template-columns: 100%; align-items: center; justify-content: center;">
-              <img src="./assets/images/Mit-Mol-Logo-12-new.png" alt="website logo" style="height: 60px; width: auto; margin: auto;">
-              <marquee behavior="" direction="left" style="position: absolute; color: red; font-size: 0.6rem; margin-bottom: -65px;">Conveying Excellence since 1990</marquee>
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="./index.html" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="./about.html">About Us</a></li>
-              <li class="scroll-to-section"><a href="#" onclick="megamenufun()">Our Products</a></li>
-              <li class="scroll-to-section"><a href="./service.html">Our Services</a></li>
-              <li class="scroll-to-section"><a href="./career.html">Career</a></li>
-              <li class="scroll-to-section">
-                <div class="main-red-button"><a href="./contact.html">Contact Now</a></div>
-              </li>
-            </ul>
-            <a class='menu-trigger'>
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
-      </div>
+  <div class="row">
+    <div class="col-12">
+      <nav class="main-nav">
+        <!-- ***** Logo Start ***** -->
+        <a href="index.html" class="logo" style="display: grid; grid-template-columns: 100%; align-items: center; justify-content: center;">
+          <img src="./assets/images/Mit-Mol-Logo-12-new.png" alt="website logo" style="height: 60px; width: auto; margin: auto;">
+          <marquee behavior="" direction="left" style="position: absolute; color: red; font-size: 0.6rem; margin-bottom: -65px;">Conveying excellence since 1990</marquee>
+        </a>
+        <!-- ***** Logo End ***** -->
+        <!-- ***** Menu Start ***** -->
+        <ul class="nav">
+          <li class="scroll-to-section"><a href="./index.html" class="active">Home</a></li>
+          <li class="scroll-to-section"><a href="./about.html">About us</a></li>
+          <li class="scroll-to-section"><a href="#" onclick="megamenufun()">Our products</a></li>
+          <li class="scroll-to-section"><a href="./service.html">Our services</a></li>
+          <li class="scroll-to-section"><a href="./career.html">Career</a></li>
+          <li class="scroll-to-section">
+            <div class="main-red-button"><a href="./contact.html">Contact now</a></div>
+          </li>
+        </ul>
+        <a class='menu-trigger'>
+          <span>Menu</span>
+        </a>
+        <!-- ***** Menu End ***** -->
+      </nav>
     </div>
-    <div class="custom-megamenu-dropdown-content" id="megamenu_my">
-      <div class="custom-megamenu-dropdown-row">
-        <div class="custom-megamenu-dropdown-column">
-          <a href="belt_conveyors.html">
-            <i class="fas fa-cogs"></i> Belt Conveyors
-            <p>Efficient bulk and unit material handling system</p>
-          </a>
-          <a href="chain_conveyors.html">
-            <i class="fas fa-link"></i> Chain Conveyors
-            <p>Durable solution for light and heavy duty tasks</p>
-          </a>
-          <a href="screw_conveyors.html">
-            <i class="fas fa-arrow-right"></i> Screw Conveyors
-            <p>For bulk solid handling application in
-manufacturing and processing units</p>
-          </a>
-        </div>
-       
-        <div class="custom-megamenu-dropdown-column">
-          <a href="drag_conveyors.html">
-            <i class="fas fa-dolly"></i> Drag Conveyors
-            <p>Durable and long life system for movement of
-bulk materials</p>
-          </a>
-          <a href="excavators.html">
-            <i class="fas fa-truck-loading"></i> ESCAVEYORS/VERTICAL
-CONVEYOR
-            <p>For vertically handling unit loads between 2 or more level</p>
-          </a>
-          <a href="multiple_discharge_conveyors.html">
-            <i class="fas fa-external-link-alt"></i> Multiple Discharge Conveyors
-            <p>A single system to convey and elevate products
-to multiple locations</p>
-          </a>
-        </div>
-        <div class="custom-megamenu-dropdown-column">
-          <a href="modular_flex_conveyors.html">
-            <i class="fas fa-random"></i> Modular Flex Conveyors
-            <p>Adaptive unit handling systems for versatile and
-dynamic layouts.</p>
-          </a>
-          <a href="telescopic_conveyors.html">
-            <i class="fas fa-expand-arrows-alt"></i> Telescopic Conveyors
-            <p>Extendable conveyors designed for efficient
-loading and unloading operations</p>
-          </a>
-          <a href="special_accessories_products.html">
-            <i class="fas fa-tools"></i> Special Accessories/Products
-            <p>Customized solutions for unique needs.</p>
-          </a>
-        </div>
-         <div class="custom-megamenu-dropdown-column">
-          <a href="roller_conveyors.html">
-            <i class="fas fa-recycle"></i> Roller Conveyors
-            <p>Reliable system for light and heavy units</p>
-          </a>
-          <!--<a href="./wire_mesh_belt_conveyors.html">
-            <i class="fas fa-angle-double-up"></i> Wire Mesh Belt Conveyors
-            <p>Vertical material handling.</p>
-          </a>--->
-          <a href="bucket_conveyors.html">
-            <i class="fas fa-box"></i> Bucket Conveyors
-            <p>For vertical bulk material transport.</p>
-          </a>
-        </div>
-      </div>
-    </div>`
+  </div>
+</div>
+<div class="custom-megamenu-dropdown-content" id="megamenu_my">
+  <div class="custom-megamenu-dropdown-row">
+    <div class="custom-megamenu-dropdown-column">
+      <a href="belt_conveyors.html">
+        <i class="fas fa-cogs"></i> Belt conveyors
+        <p>Efficient bulk and unit material handling system</p>
+      </a>
+      <a href="chain_conveyors.html">
+        <i class="fas fa-link"></i> Chain conveyors
+        <p>Durable solution for light and heavy duty tasks</p>
+      </a>
+      <a href="screw_conveyors.html">
+        <i class="fas fa-arrow-right"></i> Screw conveyors
+        <p>For bulk solid handling application in manufacturing and processing units</p>
+      </a>
+    </div>
+   
+    <div class="custom-megamenu-dropdown-column">
+      <a href="drag_conveyors.html">
+        <i class="fas fa-dolly"></i> Drag conveyors
+        <p>Durable and long life system for movement of bulk materials</p>
+      </a>
+      <a href="excavators.html">
+        <i class="fas fa-truck-loading"></i> Escaveyors/Vertical conveyor
+        <p>For vertically handling unit loads between 2 or more levels</p>
+      </a>
+      <a href="multiple_discharge_conveyors.html">
+        <i class="fas fa-external-link-alt"></i> Multiple discharge conveyors
+        <p>A single system to convey and elevate products to multiple locations</p>
+      </a>
+    </div>
+    <div class="custom-megamenu-dropdown-column">
+      <a href="modular_flex_conveyors.html">
+        <i class="fas fa-random"></i> Modular flex conveyors
+        <p>Adaptive unit handling systems for versatile and dynamic layouts.</p>
+      </a>
+      <a href="telescopic_conveyors.html">
+        <i class="fas fa-expand-arrows-alt"></i> Telescopic conveyors
+        <p>Extendable conveyors designed for efficient loading and unloading operations</p>
+      </a>
+      <a href="special_accessories_products.html">
+        <i class="fas fa-tools"></i> Special accessories/products
+        <p>Customized solutions for unique needs.</p>
+      </a>
+    </div>
+    <div class="custom-megamenu-dropdown-column">
+      <a href="roller_conveyors.html">
+        <i class="fas fa-recycle"></i> Roller conveyors
+        <p>Reliable system for light and heavy units<br><br></p>
+      </a>
+      <!--<a href="./wire_mesh_belt_conveyors.html">
+        <i class="fas fa-angle-double-up"></i> Wire mesh belt conveyors
+        <p>Vertical material handling.<br><br></p>
+      </a>--->
+      <a href="bucket_elevators.html">
+        <i class="fas fa-box"></i> Bucket elevators
+        <p>For vertical bulk material transport.<br><br></p>
+      </a>
+      <a href="spiral_conveyors.html">
+        <i class="fas fa-rotate"></i> Spiral conveyors
+        <p>Vertical material transport with
+continuous flow, optimizing
+space and movement.</p>
+      </a>
+    </div>
+  </div>
+</div>
+`
 
 
 

@@ -2333,7 +2333,7 @@ background: white;
 }
 
 .main-banner::before {
-background: url('../images/sample-new-bg.png');
+background: url('../images/new_con_bg.png');
   content: '';
   position: absolute;
   top: 0;
@@ -2342,7 +2342,8 @@ background: url('../images/sample-new-bg.png');
   bottom: 0;
   background-size: 60%;
   background-position: bottom left;
-  z-index: 1; 
+  bottom: -100px;
+  z-index: 0; 
   background-repeat: no-repeat;
 }
 
