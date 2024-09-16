@@ -851,7 +851,6 @@ Banner Style
 
 
 .main-banner .left-content {
-  background:white;
   position: relative;
   margin-right: 45px;
   z-index: 200;
@@ -2334,15 +2333,15 @@ background: white;
 }
 
 .main-banner::before {
-background: url('../images/bg-banner.png');
+background: url('../images/sample-new-bg.png');
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-size: 40%;
-  background-position: top left;
+  background-size: 60%;
+  background-position: bottom left;
   z-index: 1; 
   background-repeat: no-repeat;
 }
