@@ -134,46 +134,48 @@ else{
 //footerr
 
 const footerHTML = `
-    <div class="footer-content">
-        <div class="footer-section">
-            <h3>Products</h3>
-            <ul>
-                <li><a href="./belt_conveyors.html">Belt Conveyors</a></li>
-                <li><a href="./chain_conveyors.html">Chain Conveyors</a></li>
-                <li><a href="./screw_conveyors.html">Screw Conveyors</a></li>
-                <li><a href="./roller_conveyors.html">Roller Conveyors</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Products</h3>
-            <ul>
-                <li><a href="./drag_conveyors.html">Drag Conveyors</a></li>
-                <li><a href="./excavators.html">Escaveyors/Vertical Conveyors</a></li>
-                <li><a href="./multiple_discharge_conveyors.html">Multiple Discharge Conveyors</a></li>
-                <li><a href="./bucket_conveyors.html">Bucket Conveyors</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Products</h3>
-            <ul>
-                <li><a href="./modular_flex_conveyors.html">Modular Flex Conveyors</a></li>
-                <li><a href="./telescopic_conveyors.html">Telescopic Conveyors</a></li>
-                <li><a href="./special_accessories_products.html">Special Accessories/Products</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3>Services</h3>
-            <ul>
-                <li><a href="./service.html#design">Design</a></li>
-                <li><a href="./service.html#manufacturing">Manufacturing</a></li>
-                <li><a href="./service.html#installation">Installation & Commissioning</a></li>
-                <li><a href="./service.html#service-maintenance">Service & Maintenance</a></li>
-            </ul>
-        </div>
+   <div class="footer-content">
+    <div class="footer-section">
+        <h3>Products</h3>
+        <ul>
+            <li><a href="./belt_conveyors.html">Belt Conveyors</a></li>
+            <li><a href="./chain_conveyors.html">Chain Conveyors</a></li>
+            <li><a href="./screw_conveyors.html">Screw Conveyors</a></li>
+            <li><a href="./roller_conveyors.html">Roller Conveyors</a></li>
+        </ul>
     </div>
-    <div class="footer-bottom">
-        <p>&copy; 2002 MIT - MOL CONVEYORS PVT. LTD. All Rights Reserved</p>
+    <div class="footer-section">
+        <h3>Products</h3>
+        <ul>
+            <li><a href="./drag_conveyors.html">Drag Conveyors</a></li>
+            <li><a href="./excavators.html">Escaveyors/Vertical Conveyors</a></li>
+            <li><a href="./multiple_discharge_conveyors.html">Multiple Discharge Conveyors</a></li>
+            <li><a href="./bucket_elevators.html">Bucket Elevators</a></li>
+        </ul>
     </div>
+    <div class="footer-section">
+        <h3>Products</h3>
+        <ul>
+            <li><a href="./modular_flex_conveyors.html">Modular Flex Conveyors</a></li>
+            <li><a href="./telescopic_conveyors.html">Telescopic Conveyors</a></li>
+            <li><a href="./spiral_conveyors.html">Spiral Conveyors</a></li>
+            <li><a href="./special_accessories_products.html">Special Accessories/Products</a></li>
+        </ul>
+    </div>
+    <div class="footer-section">
+        <h3>Services</h3>
+        <ul>
+            <li><a href="./service.html#design">Design</a></li>
+            <li><a href="./service.html#manufacturing">Manufacturing</a></li>
+            <li><a href="./service.html#installation">Installation & Commissioning</a></li>
+            <li><a href="./service.html#service-maintenance">Service & Maintenance</a></li>
+        </ul>
+    </div>
+</div>
+<div class="footer-bottom">
+    <p>&copy; 2002 MIT - MOL CONVEYORS PVT. LTD. All Rights Reserved</p>
+</div>
+
 `;
 
 
