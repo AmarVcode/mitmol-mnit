@@ -380,17 +380,38 @@
       </div>
     </section>
   
-    <!-- Call to Action Section -->
-    <section id="custom_product_cta" class="text-center py-5">
-      <div class="container">
-        <a href="./product/pdf/9ROLLER-CONVEYORS.pdf" class="btn btn-primary btn-lg mx-2 mb-3">
-          <i class="fas fa-file-pdf mr-2"></i> Download Product Brochure
-        </a>
-        <a href="./contact.html" style="color: white;" class="btn btn-secondary btn-lg mx-2 mb-3">
-          <i class="fas fa-quote-left mr-2"></i> Request a Quote
-        </a>
+<!-- For Roller Conveyors -->
+<section id="custom_product_cta" class="text-center py-5">
+  <div class="container">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#popupFormRoller">
+      Want to know more about Roller Conveyors?
+    </button>
+    <a href="./contact.html" style="color: white;" class="btn btn-secondary btn-lg mx-2">
+      <i class="fas fa-quote-left mr-2"></i> Request a Quote
+    </a>
+  </div>
+
+  <!-- The Popup Form Modal for Roller Conveyors -->
+  <div class="modal fade" id="popupFormRoller" tabindex="-1" aria-labelledby="popupFormRollerLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="popupFormRollerLabel" style="text-align: left;">Get Your Exclusive Roller Conveyors Brochure – Drop Your Email Below!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="./assets/php/brochure.php" method="post">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="emailRoller" placeholder="Enter your email" name="email" required>
+              <input type="hidden" id="product" value="roller conveyors product" name="product">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
   
     <!-- Industry Applications Section -->
     <section id="custom_product_industries" class="container py-5">

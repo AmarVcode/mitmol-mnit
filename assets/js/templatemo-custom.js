@@ -328,3 +328,20 @@ document.querySelector('#let_change_header_height').innerHTML = header_code;
         updateCount();
       });
       
+
+
+
+
+
+
+
+
+
+
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css';
+      
+      // Insert the link as the first child of the <head>
+      document.head.insertBefore(link, document.head.firstChild);
