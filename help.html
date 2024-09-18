@@ -3,52 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Popup Form</title>
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Additional Styling */
-    .modal-content {
-      border-radius: 10px;
-    }
-
-    .btn-open {
-      margin-top: 20px;
-    }
-  </style>
+  <title>Document</title>
 </head>
 <body>
+  <style>
+    /* Hero Section Styles */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height for impact */
+  background: url('./assets/images/about-hero.png') no-repeat center center/cover; /* Fullscreen background image */
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden; /* Prevents any overflow */
+}
 
-  <!-- Button to Open the Modal -->
-  <div class="text-center">
-    <button type="button" class="btn btn-primary btn-open" data-bs-toggle="modal" data-bs-target="#popupForm">
-      Open Form
-    </button>
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+  padding: 2rem;
+  border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.hero-section h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+  font-weight: 700; /* Bold text for impact */
+}
+
+.hero-section p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif; /* Consistent font with heading */
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #ffffff;
+  color: #333333; /* Dark text for contrast */
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px; /* Rounded button for a modern feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  background: #333333;
+  color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+  </style>
+
+<section class="hero-section">
+  <div class="hero-content">
+    <h1>About Mit-Mol Conveyors Pvt. Ltd.</h1>
+    <p>we are dedicated to providing cutting-edge solutions in the field of conveyor systems. With years of expertise and a commitment to innovation, we design and manufacture high-quality conveyor systems tailored to meet the diverse needs of various industries</p>
+    <a href="./contact.html" class="btn-primary">Explore More</a>
   </div>
+</section>
 
-  <!-- The Popup Form Modal -->
-  <div class="modal fade" id="popupForm" tabindex="-1" aria-labelledby="popupFormLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="popupFormLabel">Subscribe to our Newsletter</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-            </div>
-            <button type="submit" class="btn btn-danger w-100">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
