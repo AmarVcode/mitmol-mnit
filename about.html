@@ -147,6 +147,116 @@
     <div class="top-gap-header">
     
     </div>
+
+    <style>
+      #hero-section-about {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh; /* Full viewport height for impact */
+     background: url('./assets/images/about-hero.png') no-repeat center center/cover; /* Fullscreen background image */
+     color: #000000;
+     text-align: center;
+     padding: 2rem;
+     position: relative;
+     overflow: hidden;
+   }
+   
+   #hero-section-about::after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
+     z-index: 1; /* Ensure overlay is behind the content */
+   }
+   
+   #hero-section-about * {
+     position: relative;
+     z-index: 2; /* Ensure the content appears on top of the overlay */
+   }
+   
+   .hero-content {
+     max-width: 600px;
+     margin: 0 auto;
+     background: rgba(255, 255, 255); /* Semi-transparent background for better text readability */
+     padding: 2rem;
+     border-radius: 10px; /* Rounded corners for a modern look */
+   }
+   
+   #hero-section-about h1 {
+     font-size: 2rem;
+     margin-bottom: 1rem;
+     font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+     font-weight: 700; /* Bold text for impact */
+   }
+   
+   #hero-section-about p {
+     font-size: 1.125rem;
+     margin-bottom: 1.5rem;
+     line-height: 1.6;
+     font-family: 'Roboto', sans-serif; /* Consistent font with heading */
+   }
+   
+   .btn-primary {
+     display: inline-block;
+     background: #000000;
+     color: #ffffff; /* Dark text for contrast */
+     padding: 0.75rem 1.5rem;
+     text-decoration: none;
+     font-size: 1rem;
+     border-radius: 30px; /* Rounded button for a modern feel */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+   }
+   
+   .btn-primary:hover {
+     background: #333333;
+     color: #ffffff;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+   }
+   
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+     .hero-content {
+       padding: 1.5rem;
+     }
+   
+     #hero-section-about h1 {
+       font-size: 1.5rem;
+     }
+   
+     #hero-section-about p {
+       font-size: 1rem;
+     }
+   
+     .btn-primary {
+       padding: 0.5rem 1rem;
+       font-size: 0.875rem;
+     }
+   }
+   
+   @media (max-width: 480px) {
+     #hero-section-about h1 {
+       font-size: 1.25rem;
+     }
+   
+     #hero-section-about p {
+       font-size: 0.9rem;
+     }
+   }
+   
+     </style>
+   
+   <section id="hero-section-about">
+     <div class="hero-content">
+       <h1>About Mit-Mol Conveyors Pvt. Ltd.</h1>
+       <p>We are dedicated to providing cutting-edge solutions in the field of conveyor systems. With years of expertise and a commitment to innovation, we design and manufacture high-quality conveyor systems tailored to meet the diverse needs of various industries.</p>
+       <a href="./contact.html" class="btn-primary">Explore More</a>
+     </div>
+   </section>
     <style>
         /* styles.css */
 
