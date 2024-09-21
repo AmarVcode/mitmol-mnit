@@ -178,9 +178,10 @@
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    align-items: center;
     justify-content: center;
+    grid-template-columns: auto auto auto auto;
     gap: 20px;
 }
 
@@ -188,7 +189,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    width: calc(25% - 20px);
+    width: 100%;
 }
 
 .gallery-item img {
@@ -280,7 +281,7 @@
             <div class="gallery-item-title">Divertor Chutes</div>
         </div>
         <div class="gallery-item">
-            <img src="./product/special_part/Merger Conveyors.png" alt="Merger Conveyors">
+            <img src="./product/special_part/Merger Conveyors.webp" alt="Merger Conveyors">
             <div class="gallery-item-title">Merger Conveyors</div>
         </div>
         <div class="gallery-item">
@@ -288,8 +289,8 @@
             <div class="gallery-item-title">Traffic Cops, Stoppers</div>
         </div>
         <div class="gallery-item">
-            <img src="./product/special_part/Ball Tables.png" alt="Ball Tables">
-            <div class="gallery-item-title">Ball Tables</div>
+            <img src="./product/special_part/pipe.png" alt="Ball Tables">
+            <div class="gallery-item-title"> Pipe Drag Conveyor</div>
         </div>
     </div>
     <button class="know-more-btn">Know More</button>
