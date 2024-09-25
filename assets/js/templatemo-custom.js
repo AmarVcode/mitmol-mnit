@@ -751,7 +751,58 @@ document.querySelector('#let_change_header_height').innerHTML = header_code;
 
 
 
+//inserting industry section
 
+
+let industry_code = '\
+  <h2 class="text-center mb-4">Industries We Serve</h2>\
+  <div class="row text-center">\
+    <div class="col-md-4">\
+      <i class="fas fa-flask fa-3x mb-3"></i>\
+      <p>Detergents & Chemicals</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-utensils fa-3x mb-3"></i>\
+      <p>Food Processing</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-box fa-3x mb-3"></i>\
+      <p>Packaging</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-tractor fa-3x mb-3"></i>\
+      <p>Agriculture</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-plane fa-3x mb-3"></i>\
+      <p>Aerospace</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-cogs fa-3x mb-3"></i>\
+      <p>Manufacturing</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-recycle fa-3x mb-3"></i>\
+      <p>Recycling and Waste Management</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-warehouse fa-3x mb-3"></i>\
+      <p>Warehousing</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-paint-roller fa-3x mb-3"></i>\
+      <p>Textile and Apparel</p>\
+    </div>\
+    <div class="col-md-4">\
+      <i class="fas fa-truck fa-3x mb-3"></i>\
+      <p>Automotive and Transportation</p>\
+    </div>\
+  </div>';
+
+
+
+document.querySelector('#custom_product_industries').innerHTML = null;
+document.querySelector('#custom_product_industries').innerHTML = industry_code;
 
 
 
