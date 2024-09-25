@@ -173,8 +173,9 @@ const footerHTML = `
     </div>
 </div>
 <div class="footer-bottom">
-    <p>&copy; 2002 MIT - MOL CONVEYORS PVT. LTD. All Rights Reserved</p>
+    <p>&copy; 2002 MIT - MOL CONVEYORS PVT. LTD. All Rights Reserved | <a href="./term.html">Terms and Conditions</a></p>
 </div>
+
 
 `;
 
