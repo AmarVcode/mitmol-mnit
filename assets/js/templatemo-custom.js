@@ -730,7 +730,7 @@ space and movement.</p>
         <p>Adaptive unit handling systems for versatile and dynamic layouts.</p>
       </a>
       <a href="telescopic_conveyors.html">
-        <i class="fas fa-expand-arrows-alt"></i> Telescopic conveyors
+        <i class="fa-solid fa-truck"></i> Telescopic conveyors
         <p>Extendable conveyors designed for efficient loading and unloading operations</p>
       </a>
       <a href="special_accessories_products.html">
