@@ -385,6 +385,28 @@
       display: grid;
       align-items: end;
     }
+
+    .hide_on_pc{
+      display: none;
+    }
+    .hide_on_mobile{
+      display: grid;
+    }
+
+    @media (max-width: 768px) {
+      .my_img_pro_grid{
+      grid-template-columns: 100%;
+      gap: 10px;
+    }
+    .hide_on_mobile{
+      display: none;
+    }
+
+    .hide_on_pc{
+      display: grid;
+    }
+
+}
   </style>
 
 
@@ -413,11 +435,23 @@
     </div>
 
 
+    <div class="container my_img_pro_grid hide_on_pc" style="border-top: 1px solid grey;">
+      <div> <img src="./product/images/dragconveyor/7.jpg" alt="Drag Conveyor Image 1">
+      </div>
+      <div> <img src="./product/images/dragconveyor/9.jpg" alt="Drag Conveyor Image 1">
+      </div>
+      <div> <img src="./product/images/dragconveyor/8.jpg" alt="Drag Conveyor Image 1">
+      </div>
+      <div class="content_custom">
+        <h3>Round Bottom Drag Conveyors</h3>
+        <p>Expertly engineered for optimal performance with abrasive materials, featuring a sleek round-bottom design that reduces material buildup and ensures smooth operation.</p>
+      </div>
+    </div>
 
     
 
 
-    <div class="container my_img_pro_grid_2">
+    <div class="container my_img_pro_grid_2 hide_on_mobile">
      
       <div class="content_custom custom-content-grid">
         <h3>Round Bottom Drag Conveyors</h3>
