@@ -2700,7 +2700,7 @@ form#contact {
 }
 
 .customfaq-accordion button .customfaq-accordion-title {
-  padding: 20px !important;
+  padding-right: 50px !important;
   font-size: 15px;
 }
 
