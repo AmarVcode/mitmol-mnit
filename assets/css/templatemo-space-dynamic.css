@@ -2718,8 +2718,71 @@ font-size: 30px;
 font-size: 16px;
 }
 
+        /* Styling inside #mobileMenuAccordion */
+        #mobileMenuAccordion .accordion-item {
+          border: none;
+          margin-bottom: 10px;
+      }
+      #mobileMenuAccordion .accordion-button {
+          background-color: #e0f7ff;
+          color: #007bff;
+          font-weight: bold;
+          border: none;
+          padding: 15px;
+      }
+      #mobileMenuAccordion .accordion-button:focus {
+          box-shadow: none;
+      }
+      #mobileMenuAccordion .accordion-button:not(.collapsed) {
+          background-color: #b3e5fc;
+          color: #0056b3;
+      }
+      #mobileMenuAccordion .accordion-button::after {
+          color: #007bff;
+      }
+      #mobileMenuAccordion .accordion-body {
+          background-color: #e0f7ff;
+          padding: 10px 15px;
+      }
+      #mobileMenuAccordion .accordion-body ul {
+          padding-left: 20px;
+      }
+      #mobileMenuAccordion .accordion-body ul li {
+          margin: 5px 0;
+      }
+      #mobileMenuAccordion .accordion-body ul li a {
+          text-decoration: none;
+          color: #007bff;
+      }
+      #mobileMenuAccordion .accordion-body ul li a:hover {
+          text-decoration: underline;
+      }
+      #mobileMenuAccordion .accordion-body hr {
+          border-color: #b3e5fc;
+          margin: 15px 0;
+      }
+      #mobileMenuAccordion .accordion-body ul {
+padding-left: 20px;
+}
+#mobileMenuAccordion .accordion-body ul li a {
+text-decoration: none;
+color: #007bff;
+display: block;
+width: 100%;
+text-align: left;
+}
 
-
+#mobileMenuAccordion{
+  position: absolute;
+  top: 100px;
+  background: white;
+  width: 100%;
+  left: 0px;
+  display: none;
+}
 
 
   }
+
+
+  

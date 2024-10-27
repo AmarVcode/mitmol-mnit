@@ -1,145 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Mobile Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    </style>
 </head>
 <body>
-  <style>
-   #hero-section-about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Full viewport height for impact */
-  background: url('./assets/images/about-hero.png') no-repeat center center/cover; /* Fullscreen background image */
-  color: #000000;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  overflow: hidden;
-}
 
-#hero-section-about::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Black overlay with 60% opacity */
-  z-index: 1; /* Ensure overlay is behind the content */
-}
+  <div class="accordion" id="mobileMenuAccordion">
+    <!-- Main Pages -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingMainPages">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMainPages" aria-expanded="false" aria-controls="collapseMainPages">
+          Main Pages
+        </button>
+      </h2>
+      <div id="collapseMainPages" class="accordion-collapse collapse" aria-labelledby="headingMainPages" data-bs-parent="#mobileMenuAccordion">
+        <div class="accordion-body">
+          <ul class="list-unstyled">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="#collapseOurProducts" data-bs-toggle="collapse" aria-expanded="false">Our Products</a></li>
+            <li><a href="#collapseServices" data-bs-toggle="collapse" aria-expanded="false">Our Services</a></li>
+            <li><a href="./career.html">Career</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-#hero-section-about * {
-  position: relative;
-  z-index: 2; /* Ensure the content appears on top of the overlay */
-}
+    <!-- Our Products -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOurProducts">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOurProducts" aria-expanded="false" aria-controls="collapseOurProducts">
+          Our Products
+        </button>
+      </h2>
+      <div id="collapseOurProducts" class="accordion-collapse collapse" aria-labelledby="headingOurProducts" data-bs-parent="#mobileMenuAccordion">
+        <div class="accordion-body">
+          <ul class="list-unstyled">
+            <li><a href="./belt_conveyors.html">Belt Conveyors</a></li>
+            <li><a href="./chain_conveyors.html">Chain Conveyors</a></li>
+            <li><a href="./screw_conveyors.html">Screw Conveyors</a></li>
+            <li><a href="./roller_conveyors.html">Roller Conveyors</a></li>
+          </ul>
+          <hr>
+          <ul class="list-unstyled">
+            <li><a href="./drag_conveyors.html">Drag Conveyors</a></li>
+            <li><a href="./excavators.html">Escaveyors/Vertical Conveyors</a></li>
+            <li><a href="./multiple_discharge_conveyors.html">Multiple Discharge Conveyors</a></li>
+            <li><a href="./bucket_elevators.html">Bucket Elevators</a></li>
+          </ul>
+          <hr>
+          <ul class="list-unstyled">
+            <li><a href="./modular_flex_conveyors.html">Modular Flex Conveyors</a></li>
+            <li><a href="./telescopic_conveyors.html">Telescopic Conveyors</a></li>
+            <li><a href="./spiral_conveyors.html">Spiral Conveyors</a></li>
+            <li><a href="./special_accessories_products.html">Special Accessories/Products</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-.hero-content {
-  max-width: 600px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255); /* Semi-transparent background for better text readability */
-  padding: 2rem;
-  border-radius: 10px; /* Rounded corners for a modern look */
-}
-
-#hero-section-about h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
-  font-weight: 700; /* Bold text for impact */
-}
-
-#hero-section-about p {
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-  font-family: 'Roboto', sans-serif; /* Consistent font with heading */
-}
-
-.btn-primary {
-  display: inline-block;
-  background: #000000;
-  color: #ffffff; /* Dark text for contrast */
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 30px; /* Rounded button for a modern feel */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
-}
-
-.btn-primary:hover {
-  background: #333333;
-  color: #ffffff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .hero-content {
-    padding: 1.5rem;
-  }
-
-  #hero-section-about h1 {
-    font-size: 1.5rem;
-  }
-
-  #hero-section-about p {
-    font-size: 1rem;
-  }
-
-  .btn-primary {
-    padding: 0.5rem 1rem;
-    font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #hero-section-about h1 {
-    font-size: 1.25rem;
-  }
-
-  #hero-section-about p {
-    font-size: 0.9rem;
-  }
-}
-
-  </style>
-
-<section id="hero-section-about">
-  <div class="hero-content">
-    <h1>About Mit-Mol Conveyors Pvt. Ltd.</h1>
-    <p>We are dedicated to providing cutting-edge solutions in the field of conveyor systems. With years of expertise and a commitment to innovation, we design and manufacture high-quality conveyor systems tailored to meet the diverse needs of various industries.</p>
-    <a href="./contact.html" class="btn-primary">Explore More</a>
+    <!-- Services -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingServices">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServices" aria-expanded="false" aria-controls="collapseServices">
+          Services
+        </button>
+      </h2>
+      <div id="collapseServices" class="accordion-collapse collapse" aria-labelledby="headingServices" data-bs-parent="#mobileMenuAccordion">
+        <div class="accordion-body">
+          <h3>Services</h3>
+          <ul class="list-unstyled">
+            <li><a href="./service.html#design">Design</a></li>
+            <li><a href="./service.html#manufacturing">Manufacturing</a></li>
+            <li><a href="./service.html#installation">Installation & Commissioning</a></li>
+            <li><a href="./service.html#service-maintenance">Service & Maintenance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//spiral code
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="210.000000pt" height="187.000000pt" viewBox="0 0 210.000000 187.000000" preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,187.000000) scale(0.100000,-0.100000)"> <path d="M794 1704 c-32 -38 -38 -53 -38 -94 -1 -39 5 -57 30 -92 l31 -44 -27 -33 c-16 -18 -31 -46 -34 -63 -8 -41 8 -99 37 -129 l22 -24 -30 -43 c-42 -60 -40 -127 4 -182 30 -37 30 -38 11 -55 -11 -10 -27 -36 -35 -60 -20 -50 -10 -102 29 -150 l24 -29 -31 -38 c-43 -54 -43 -120 -1 -180 l30 -43 -23 -24 c-28 -30 -46 -91 -37 -128 15 -61 78 -130 102 -111 10 9 7 17 -16 42 -16 17 -35 41 -42 54 -16 31 -5 91 24 126 22 28 23 29 49 11 14 -9 68 -28 119 -41 156 -41 322 -30 380 25 52 50 15 121 -73 140 -113 24 -280 8 -389 -38 -74 -31 -79 -29 -106 35 -19 45 -10 95 22 125 23 22 26 22 52 7 41 -24 187 -59 272 -65 55 -4 92 -1 134 11 158 46 148 159 -17 187 -112 18 -283 -3 -370 -48 -47 -23 -50 -23 -68 -7 -46 42 -46 137 0 178 18 16 22 16 61 -4 65 -33 231 -63 321 -57 160 10 233 83 155 156 -32 30 -154 54 -231 46 -96 -11 -189 -32 -240 -55 -44 -20 -48 -20 -66 -4 -43 39 -47 118 -8 168 l20 25 69 -30 c134 -57 379 -63 449 -12 64 48 43 114 -45 145 -99 34 -342 10 -433 -43 l-35 -21 -23 28 c-12 16 -25 41 -28 56 -8 34 9 90 35 113 18 16 22 16 74 -8 74 -34 183 -50 302 -45 108 4 146 17 178 60 50 68 -35 130 -186 136 -96 4 -243 -24 -312 -59 -36 -19 -40 -19 -57 -3 -26 23 -42 78 -34 115 4 17 22 48 41 69 18 20 31 40 27 44 -15 14 -34 4 -69 -40z m507 -174 c43 -12 69 -51 50 -74 -20 -24 -100 -46 -167 -46 -103 0 -320 50 -298 69 14 12 96 41 145 50 62 12 227 13 270 1z m21 -267 c76 -44 17 -101 -113 -111 -87 -6 -329 44 -329 68 0 9 162 58 210 64 78 9 199 -1 232 -21z m-12 -255 c53 -27 58 -51 17 -82 -24 -18 -46 -22 -135 -24 -92 -3 -120 0 -209 24 -57 16 -103 32 -103 37 0 10 12 14 118 43 121 32 250 33 312 2z m1 -255 c82 -32 49 -95 -57 -109 -86 -10 -209 3 -296 32 -43 14 -78 29 -78 34 0 8 75 30 190 55 75 17 184 11 241 -12z m-25 -249 c86 -25 95 -79 18 -104 -61 -21 -275 -7 -357 22 -74 26 -75 35 -5 57 118 38 263 49 344 25z" stroke="#03a4ed"></path> </g> </svg>
-
- <i class="fas fa-rotate" style="font-size: 2.5rem; color: #03a4ed;"></i>

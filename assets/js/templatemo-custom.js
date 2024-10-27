@@ -185,8 +185,18 @@ document.querySelector('footer').innerHTML = null;
 document.querySelector('footer').innerHTML = footerHTML;
 
 
+let menuopen = false;
+function showmenu(){
+  if(menuopen === false){
+    document.getElementById('mobileMenuAccordion').style.display="block";
+    menuopen = true
+  }
+  else{
+    document.getElementById('mobileMenuAccordion').style.display="none";
+    menuopen = false
+  }
 
-
+}
 
 
 
@@ -216,7 +226,7 @@ const header_code = `<div class="container">
             <div class="main-red-button"><a href="./contact.html">Contact now</a></div>
           </li>
         </ul>
-        <a class='menu-trigger'>
+        <a class='menu-trigger' onclick="showmenu()">
           <span>Menu</span>
         </a>
         <!-- ***** Menu End ***** -->
@@ -760,6 +770,77 @@ space and movement.</p>
 
   </div>
 </div>
+ <div class="accordion" id="mobileMenuAccordion">
+    <!-- Main Pages -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingMainPages">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMainPages" aria-expanded="false" aria-controls="collapseMainPages">
+          Main Pages
+        </button>
+      </h2>
+      <div id="collapseMainPages" class="accordion-collapse collapse" aria-labelledby="headingMainPages" data-bs-parent="#mobileMenuAccordion">
+        <div class="accordion-body">
+          <ul class="list-unstyled">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="#collapseOurProducts" data-bs-toggle="collapse" aria-expanded="false">Our Products</a></li>
+            <li><a href="#collapseServices" data-bs-toggle="collapse" aria-expanded="false">Our Services</a></li>
+            <li><a href="./career.html">Career</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Products -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOurProducts">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOurProducts" aria-expanded="false" aria-controls="collapseOurProducts">
+          Our Products
+        </button>
+      </h2>
+      <div id="collapseOurProducts" class="accordion-collapse collapse" aria-labelledby="headingOurProducts" data-bs-parent="#mobileMenuAccordion">
+        <div class="accordion-body">
+          <ul class="list-unstyled">
+            <li><a href="./belt_conveyors.html">Belt Conveyors</a></li>
+            <li><a href="./chain_conveyors.html">Chain Conveyors</a></li>
+            <li><a href="./screw_conveyors.html">Screw Conveyors</a></li>
+            <li><a href="./roller_conveyors.html">Roller Conveyors</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><a href="./drag_conveyors.html">Drag Conveyors</a></li>
+            <li><a href="./excavators.html">Escaveyors/Vertical Conveyors</a></li>
+            <li><a href="./multiple_discharge_conveyors.html">Multiple Discharge Conveyors</a></li>
+            <li><a href="./bucket_elevators.html">Bucket Elevators</a></li>
+          </ul>
+          <ul class="list-unstyled">
+            <li><a href="./modular_flex_conveyors.html">Modular Flex Conveyors</a></li>
+            <li><a href="./telescopic_conveyors.html">Telescopic Conveyors</a></li>
+            <li><a href="./spiral_conveyors.html">Spiral Conveyors</a></li>
+            <li><a href="./special_accessories_products.html">Special Accessories/Products</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingServices">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServices" aria-expanded="false" aria-controls="collapseServices">
+          Services
+        </button>
+      </h2>
+      <div id="collapseServices" class="accordion-collapse collapse" aria-labelledby="headingServices" data-bs-parent="#mobileMenuAccordion">
+        <div class="accordion-body">
+          <ul class="list-unstyled">
+            <li><a href="./service.html#design">Design</a></li>
+            <li><a href="./service.html#manufacturing">Manufacturing</a></li>
+            <li><a href="./service.html#installation">Installation & Commissioning</a></li>
+            <li><a href="./service.html#service-maintenance">Service & Maintenance</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 `
 
 
