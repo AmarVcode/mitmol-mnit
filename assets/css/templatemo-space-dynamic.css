@@ -2696,7 +2696,7 @@ form#contact {
 }
 
 .customfaq-container{
-  padding: 10px;
+  padding: 10px !important;
 }
 
 .customfaq-accordion button .customfaq-accordion-title {
