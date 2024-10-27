@@ -782,7 +782,7 @@ space and movement.</p>
         <div class="accordion-body">
           <ul class="list-unstyled">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./about_us.html">About Us</a></li>
+            <li><a href="./about.html">About Us</a></li>
             <li><a href="#collapseOurProducts" data-bs-toggle="collapse" aria-expanded="false">Our Products</a></li>
             <li><a href="#collapseServices" data-bs-toggle="collapse" aria-expanded="false">Our Services</a></li>
             <li><a href="./career.html">Career</a></li>
