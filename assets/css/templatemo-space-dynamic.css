@@ -3054,6 +3054,28 @@ responsive
   .product-gallery h1{
     font-size: 24px !important;
   }
+
+  .text-center{
+    font-size: 24px;
+  }
+
+  .card-body .card-title {
+    font-size: 18px;
+  }
+
+  #custom_product_benefits .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  .text-center h2{
+font-size: 22px;
+
+  }
+  .custom_product_intro {
+    font-size: 2rem;
+  }
 }
 
 .custom_solo_p {
