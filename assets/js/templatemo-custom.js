@@ -16,6 +16,13 @@
   });
 
 
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css';
+
+  
+  // Insert the link as the first child of the <head>
+  document.head.insertBefore(link, document.head.firstChild);
 	// $('.owl-our-team').owlCarousel({
 	// 	items:3,
 	// 	loop:true,
@@ -940,10 +947,3 @@ document.querySelector('#custom_product_industries').innerHTML = industry_code;
 
 
 
-
-      var link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css';
-      
-      // Insert the link as the first child of the <head>
-      document.head.insertBefore(link, document.head.firstChild);
