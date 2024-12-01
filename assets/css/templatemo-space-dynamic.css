@@ -2697,6 +2697,15 @@ responsive
   justify-content: center;
 }
 
+#custom_product_industries2 .col-md-4 {
+  padding-bottom: 50px;
+}
+
+#custom_product_industries2 .row {
+  justify-content: center;
+}
+
+
 
 
 
@@ -3018,6 +3027,11 @@ responsive
   }
 
   #custom_product_industries .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #custom_product_industries2 .row{
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
