@@ -302,7 +302,7 @@
       justify-content: center;
       align-items: center;
       padding: 40px;
-      background-color: #f3f3f3;
+      background-color: #fff;
     }
 
     .gallery {
@@ -327,6 +327,59 @@
       transform: scale(1.05);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
+
+    .important {
+  position: relative;
+  background: #ff9a9d4a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  animation: fadeIn 1.2s ease-in-out;
+  overflow: hidden;
+  transform: scale(0.9);
+}
+
+.important::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.highlight-title {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #e30b5d;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 4px;
+  }
+}
   </style>
 
 
@@ -338,15 +391,36 @@
         <p class="lead">Efficient Solutions for Diverse Product Handling Needs</p>
       </div>
     </section>
+    <p class="important container">
+      <span class="highlight-title">Important:</span> Multiple discharge conveyors convey and elevate product to many locations, for example, feeding a number of packing or bagging machines.  
+      Also, multiple infeed points can be utilized in this design as well, creating a cost-effective alternative to multiple conveying machines.  
+      Depending upon the nature of the product, we manufacture the following types of multiple discharge conveyors.
+    </p>
+    
+        <!-- Product Features Section -->
+        <section id="custom_product_features" class="container py-5">
+          <h2 class="text-center mb-4">Types of Multiple Discharge Conveyors</h2>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <h3>MDC Screw Conveyors</h3>
+              <p>Designed for transferring bulk materials in a single direction with a helical screw. Ideal for bulk
+                products such as flour, rice, and other granular materials. Equipped with multiple inlet & outlet spouts
+                controlled by gate valves.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+              <h3>MDC Drag Conveyors</h3>
+              <p>Uses a chain and flights to move bulk materials horizontally or on an incline. Best for granular or powdery
+                products such as cereals, chemicals, and powders, and can incorporate multiple discharge gates along its
+                path.</p>
+            </div>
+
+          </div>
+        </section>
 
     <!-- Image Gallery Section -->
     <section class="image-gallery-section">
       <div class="gallery">
-        <img src="./product/images/multiple/multiple (2).webp" alt="multiple conveyor">
-        <img src="./product/images/multiple/multiple (1).webp" alt="multiple conveyor">
-        <img src="./product/images/multiple/multiple (1).jpeg" alt="multiple conveyor">
-        <img src="./product/images/multiple/multiple (1).jpg" alt="multiple conveyor">
-        <img src="./product/images/multiple/SC-Loadout-System-4-Gates-Flex-Chutes.jpg" alt="multiple conveyor">
+        <img src="./product/images/multiple/" alt="multiple conveyor">
       </div>
     </section>
 
