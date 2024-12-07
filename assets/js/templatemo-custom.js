@@ -935,14 +935,15 @@ document.querySelector('#custom_product_industries').innerHTML = industry_code;
         };
       
         updateCount();
+
+        setTimeout(() => {
+          console.clear();
+          console.log("Console cleared!");
+      }, 1000);
+      
+  
       });
       
-
-
-
-
-
-
 
 
 
