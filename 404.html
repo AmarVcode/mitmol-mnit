@@ -9,17 +9,17 @@
     body {
       background: linear-gradient(120deg, #a6d1ff, #d0eaff);
       height: 100vh;
-      overflow: hidden;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
+      padding: 20px;
     }
 
     .container-404 {
-      max-width: 600px;
-      padding: 30px;
+      max-width: 90%;
+      padding: 20px;
       border-radius: 15px;
       background: rgba(255, 255, 255, 0.8);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -54,6 +54,7 @@
       background: #2196f3;
       border: none;
       transition: background-color 0.3s ease;
+      margin: 5px;
     }
 
     .btn-custom:hover {
@@ -104,6 +105,38 @@
     @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-20px); }
+    }
+
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 100px;
+      }
+      .error-message {
+        font-size: 16px;
+      }
+      .error-description {
+        font-size: 14px;
+      }
+      .btn-custom {
+        font-size: 14px;
+        padding: 6px 15px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .error-code {
+        font-size: 80px;
+      }
+      .error-message {
+        font-size: 14px;
+      }
+      .error-description {
+        font-size: 12px;
+      }
+      .btn-custom {
+        font-size: 12px;
+        padding: 5px 10px;
+      }
     }
   </style>
 </head>
