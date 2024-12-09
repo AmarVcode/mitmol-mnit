@@ -1,173 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!--
-    What are Sitemaps?
-
-    Sitemaps are an easy way for webmasters to inform search engines about pages on their sites that are available for crawling.
-    In its simplest form, a Sitemap is an XML file that lists URLs for a site along with additional metadata about each URL 
-    (when it was last updated, how often it usually changes, and how important it is, relative to other URLs in the site) 
-    so that search engines can more intelligently crawl the site.
-
-    Web crawlers usually discover pages from links within the site and from other sites. Sitemaps supplement this data to 
-    allow crawlers that support Sitemaps to pick up all URLs in the Sitemap and learn about those URLs using the associated metadata. 
-    Using the Sitemap protocol does not guarantee that web pages are included in search engines, but provides hints for web crawlers 
-    to do a better job of crawling your site.
-
-    Sitemap 0.90 is offered under the terms of the Attribution-ShareAlike Creative Commons License and has wide adoption, 
-    including support from Google, Yahoo!, and Microsoft.
-  -->
-
-  <!-- Homepage -->
   <url>
     <loc>https://mitmol.com/index.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- About Us -->
   <url>
     <loc>https://mitmol.com/about.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Our Products -->
   <url>
     <loc>https://mitmol.com/our-products.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Our Services -->
   <url>
     <loc>https://mitmol.com/service.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Career -->
   <url>
     <loc>https://mitmol.com/career.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Contact Now -->
   <url>
     <loc>https://mitmol.com/contact.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Belt Conveyors -->
   <url>
     <loc>https://mitmol.com/belt_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Chain Conveyors -->
   <url>
     <loc>https://mitmol.com/chain_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Screw Conveyors -->
   <url>
     <loc>https://mitmol.com/screw_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Roller Conveyors -->
   <url>
     <loc>https://mitmol.com/roller_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Bucket Elevators -->
   <url>
     <loc>https://mitmol.com/belt_elevators.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Bucket Conveyors -->
   <url>
     <loc>https://mitmol.com/bucket_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Drag Conveyors -->
   <url>
     <loc>https://mitmol.com/drag_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Escaveyors -->
   <url>
     <loc>https://mitmol.com/excavators.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Multiple Discharge Conveyors -->
   <url>
     <loc>https://mitmol.com/multiple_discharge_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Modular Flex Conveyors -->
   <url>
     <loc>https://mitmol.com/modular_flex_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Telescopic Conveyors -->
   <url>
     <loc>https://mitmol.com/telescopic_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Spiral Conveyors -->
   <url>
     <loc>https://mitmol.com/spiral_conveyors.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
-  <!-- Special Accessories/Products -->
   <url>
     <loc>https://mitmol.com/special_accessories_products.html</loc>
     <lastmod>2024-08-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-
 </urlset>
